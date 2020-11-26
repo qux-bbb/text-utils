@@ -42,6 +42,14 @@
 			{
 				"command": "text-utils.extension.transformToOrdededList",
 				"title": "transformToOrdededList"
+			},
+			{
+				"command": "text-utils.extension.base64Encode",
+				"title": "base64Encode"
+			},
+			{
+				"command": "text-utils.extension.base64Decode",
+				"title": "base64Decode"
 			}
 		],
 		"menus": {
@@ -73,6 +81,14 @@
 				{
 					"command": "text-utils.extension.transformToOrdededList",
 					"when": "editorHasSelection"
+				},
+				{
+					"command": "text-utils.extension.base64Encode",
+					"title": "editorHasSelection"
+				},
+				{
+					"command": "text-utils.extension.base64Decode",
+					"title": "editorHasSelection"
 				}
 			]
 		},

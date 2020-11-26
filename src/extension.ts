@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import { commands, ExtensionContext, Position, Range, window } from 'vscode';
+import { base64Encode, base64Decode } from "./base64";
 
 function checkTaskList() {
 	// from https://github.com/yzhang-gh/vscode-markdown/blob/ff79b2e7a69dcbfd04d5c289999c1a09ef784e61/src/listEditing.ts#L409
@@ -192,6 +193,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.transformToTitleCase', transformToTitleCase),
 		commands.registerCommand('text-utils.extension.transformToUnorderedList', transformToUnorderedList),
 		commands.registerCommand('text-utils.extension.transformToOrdededList', transformToOrdededList),
+		commands.registerCommand('text-utils.extension.base64Encode', base64Encode),
+		commands.registerCommand('text-utils.extension.base64Decode', base64Decode),
     );
 }
 
