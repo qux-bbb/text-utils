@@ -132,6 +132,50 @@ function transformToTitleCase () {
 	});
 }
 
+function transformToUnorderedList () {
+	// Get the active text editor
+	const editor = window.activeTextEditor;
+
+	if (!editor)
+		{return;}
+
+	const document = editor.document;
+	const selection = editor.selection;
+
+	// Get the string within the selection
+	const theString = document.getText(selection);
+	let theLines = theString.split('\n');
+	theLines = theLines.map(theLine => `- ${theLine}`);
+
+	editor.edit(editBuilder => {
+		editBuilder.replace(selection, theLines.join('\n'));
+	});
+}
+
+function transformToOrdededList () {
+	// Get the active text editor
+	const editor = window.activeTextEditor;
+
+	if (!editor)
+		{return;}
+
+	const document = editor.document;
+	const selection = editor.selection;
+
+	// Get the string within the selection
+	const theString = document.getText(selection);
+	let theLines = theString.split('\n');
+	for (let i = 0; i < theLines.length; i++) {
+		const line = theLines[i];
+		theLines[i] = `${i+1}. ${theLines[i]}`;
+	}
+
+
+	editor.edit(editBuilder => {
+		editBuilder.replace(selection, theLines.join('\n'));
+	});
+}
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: ExtensionContext) {
@@ -146,6 +190,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.transformToLowercase', transformToLowercase),
 		commands.registerCommand('text-utils.extension.transformToUppercase', transformToUppercase),
 		commands.registerCommand('text-utils.extension.transformToTitleCase', transformToTitleCase),
+		commands.registerCommand('text-utils.extension.transformToUnorderedList', transformToUnorderedList),
+		commands.registerCommand('text-utils.extension.transformToOrdededList', transformToOrdededList),
     );
 }
 

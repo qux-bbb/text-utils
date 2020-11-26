@@ -34,6 +34,14 @@
 			{
 				"command": "text-utils.extension.transformToTitleCase",
 				"title": "transformToTitleCase"
+			},
+			{
+				"command": "text-utils.extension.transformToUnorderedList",
+				"title": "transformToUnorderedList"
+			},
+			{
+				"command": "text-utils.extension.transformToOrdededList",
+				"title": "transformToOrdededList"
 			}
 		],
 		"menus": {
@@ -56,6 +64,14 @@
 				},
 				{
 					"command": "text-utils.extension.transformToTitleCase",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "text-utils.extension.transformToUnorderedList",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "text-utils.extension.transformToOrdededList",
 					"when": "editorHasSelection"
 				}
 			]
