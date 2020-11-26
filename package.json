@@ -10,15 +10,16 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:text-utils.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "text-utils.helloWorld",
-				"title": "Hello World"
-			}
+		"keybindings":[
+            {
+                "command": "text-utils.extension.checkTaskList",
+                "key": "alt+c",
+                "when": "editorTextFocus"
+            }
 		]
 	},
 	"scripts": {
