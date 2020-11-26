@@ -14,6 +14,52 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "text-utils.extension.checkTaskList",
+				"title": "checkTaskList"
+			},
+			{
+				"command": "text-utils.extension.reverseWord",
+				"title": "reverseWord"
+			},
+			{
+				"command": "text-utils.extension.transformToLowercase",
+				"title": "transformToLowercase"
+			},
+			{
+				"command": "text-utils.extension.transformToUppercase",
+				"title": "transformToUppercase"
+			},
+			{
+				"command": "text-utils.extension.transformToTitleCase",
+				"title": "transformToTitleCase"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "text-utils.extension.checkTaskList",
+					"when": "editorTextFocus"
+				},
+				{
+					"command": "text-utils.extension.reverseWord",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "text-utils.extension.transformToLowercase",
+					"title": "editorHasSelection"
+				},
+				{
+					"command": "text-utils.extension.transformToUppercase",
+					"title": "editorHasSelection"
+				},
+				{
+					"command": "text-utils.extension.transformToTitleCase",
+					"when": "editorHasSelection"
+				}
+			]
+		},
 		"keybindings":[
             {
                 "command": "text-utils.extension.checkTaskList",

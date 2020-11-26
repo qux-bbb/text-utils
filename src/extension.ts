@@ -52,7 +52,84 @@ function checkTaskList() {
                 editBuilder.replace(range, newChar);
             }
         });
-    }
+    };
+}
+
+function reverseWord () {
+	// Get the active text editor
+	const editor = window.activeTextEditor;
+
+	if (!editor)
+		{return;}
+
+	const document = editor.document;
+	const selection = editor.selection;
+
+	// Get the word within the selection
+	const word = document.getText(selection);
+	const reversed = word.split('').reverse().join('');
+	editor.edit(editBuilder => {
+		editBuilder.replace(selection, reversed);
+	});
+}
+
+function transformToLowercase () {
+	// Get the active text editor
+	const editor = window.activeTextEditor;
+
+	if (!editor)
+		{return;}
+
+	const document = editor.document;
+	const selection = editor.selection;
+
+	// Get the string within the selection
+	const theString = document.getText(selection);
+
+	editor.edit(editBuilder => {
+		editBuilder.replace(selection, theString.toLowerCase());
+	});
+}
+
+function transformToUppercase () {
+	// Get the active text editor
+	const editor = window.activeTextEditor;
+
+	if (!editor)
+		{return;}
+
+	const document = editor.document;
+	const selection = editor.selection;
+
+	// Get the string within the selection
+	const theString = document.getText(selection);
+
+	editor.edit(editBuilder => {
+		editBuilder.replace(selection, theString.toUpperCase());
+	});
+}
+ 
+function transformToTitleCase () {
+	// Get the active text editor
+	const editor = window.activeTextEditor;
+
+	if (!editor)
+		{return;}
+
+	const document = editor.document;
+	const selection = editor.selection;
+
+	// Get the string within the selection
+	const theString = document.getText(selection);
+	let str = theString.toLowerCase().split(' ');
+	for (var i = 0; i < str.length; i++) {
+		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+	}
+	const titleString = str.join(' ');
+
+	editor.edit(editBuilder => {
+		editBuilder.replace(selection, titleString);
+	});
 }
 
 // this method is called when your extension is activated
@@ -64,7 +141,11 @@ export function activate(context: ExtensionContext) {
 	console.log('Congratulations, your extension "text-utils" is now active!');
 
     context.subscriptions.push(
-        commands.registerCommand('text-utils.extension.checkTaskList', checkTaskList),
+		commands.registerCommand('text-utils.extension.checkTaskList', checkTaskList),
+		commands.registerCommand('text-utils.extension.reverseWord', reverseWord),
+		commands.registerCommand('text-utils.extension.transformToLowercase', transformToLowercase),
+		commands.registerCommand('text-utils.extension.transformToUppercase', transformToUppercase),
+		commands.registerCommand('text-utils.extension.transformToTitleCase', transformToTitleCase),
     );
 }
 
