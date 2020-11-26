@@ -3,9 +3,14 @@
 	"displayName": "text-utils",
 	"description": "Simple Text Utils",
 	"version": "0.0.1",
+	"publisher": "qux-bbb",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/qux-bbb/text-utils"
+    },
 	"categories": [
 		"Other"
 	],
