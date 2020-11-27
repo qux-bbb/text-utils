@@ -22,39 +22,39 @@
         "commands": [
             {
                 "command": "text-utils.extension.checkTaskList",
-                "title": "checkTaskList"
+                "title": "Check TODO"
             },
             {
-                "command": "text-utils.extension.reverseWord",
-                "title": "reverseWord"
+                "command": "text-utils.extension.reverseString",
+                "title": "Reverse String"
             },
             {
                 "command": "text-utils.extension.transformToLowercase",
-                "title": "transformToLowercase"
+                "title": "To Lowercase"
             },
             {
                 "command": "text-utils.extension.transformToUppercase",
-                "title": "transformToUppercase"
+                "title": "To Uppercase"
             },
             {
                 "command": "text-utils.extension.transformToTitleCase",
-                "title": "transformToTitleCase"
+                "title": "To Titlecase"
             },
             {
                 "command": "text-utils.extension.transformToUnorderedList",
-                "title": "transformToUnorderedList"
+                "title": "To UnorderedList"
             },
             {
                 "command": "text-utils.extension.transformToOrdededList",
-                "title": "transformToOrdededList"
+                "title": "To OrdededList"
             },
             {
                 "command": "text-utils.extension.base64Encode",
-                "title": "base64Encode"
+                "title": "Base64 Encode"
             },
             {
                 "command": "text-utils.extension.base64Decode",
-                "title": "base64Decode"
+                "title": "Base64 Decode"
             }
         ],
         "menus": {
@@ -64,7 +64,7 @@
                     "when": "editorTextFocus"
                 },
                 {
-                    "command": "text-utils.extension.reverseWord",
+                    "command": "text-utils.extension.reverseString",
                     "when": "editorHasSelection"
                 },
                 {
@@ -124,7 +124,6 @@
         "glob": "^7.1.6",
         "mocha": "^8.1.3",
         "typescript": "^4.0.2",
-        "vsce": "^1.81.1",
         "vscode-test": "^1.4.0"
     }
 }

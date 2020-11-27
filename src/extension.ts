@@ -2,13 +2,13 @@ import { commands, ExtensionContext } from 'vscode';
 import { base64Encode, base64Decode } from "./base64";
 import { checkTaskList } from './checkTaskList';
 import { transformToUnorderedList, transformToOrdededList } from './list';
-import { reverseWord, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
+import { reverseString, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
 
 export function activate(context: ExtensionContext) {
 
     context.subscriptions.push(
 		commands.registerCommand('text-utils.extension.checkTaskList', checkTaskList),
-		commands.registerCommand('text-utils.extension.reverseWord', reverseWord),
+		commands.registerCommand('text-utils.extension.reverseString', reverseString),
 		commands.registerCommand('text-utils.extension.transformToLowercase', transformToLowercase),
 		commands.registerCommand('text-utils.extension.transformToUppercase', transformToUppercase),
 		commands.registerCommand('text-utils.extension.transformToTitleCase', transformToTitleCase),

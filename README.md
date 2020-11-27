@@ -21,6 +21,7 @@
    git clone https://github.com/qux-bbb/text-utils
    cd text-utils
    npm install
+   npm install -g vsce
    vsce package
    ```
    这样可以生成vsix包，在扩展窗口的右上角菜单选择"从 VSIX 安装"，选择生成的vsix包安装即可  

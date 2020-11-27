@@ -1,6 +1,6 @@
 import { getSelectionString, setSelectionString } from "./utils";
 
-export function reverseWord () {
+export function reverseString () {
 	let theString = getSelectionString();
 	if (!theString)
         {return;}
