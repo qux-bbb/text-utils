@@ -1,129 +1,130 @@
 {
-	"name": "text-utils",
-	"displayName": "text-utils",
-	"description": "Simple Text Utils",
-	"version": "0.0.1",
-	"publisher": "qux-bbb",
-	"engines": {
-		"vscode": "^1.51.0"
-	},
-	"repository": {
+    "name": "text-utils",
+    "displayName": "text-utils",
+    "description": "Simple Text Utils",
+    "version": "0.0.1",
+    "publisher": "qux-bbb",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "repository": {
         "type": "git",
         "url": "https://github.com/qux-bbb/text-utils"
     },
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"*"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "text-utils.extension.checkTaskList",
-				"title": "checkTaskList"
-			},
-			{
-				"command": "text-utils.extension.reverseWord",
-				"title": "reverseWord"
-			},
-			{
-				"command": "text-utils.extension.transformToLowercase",
-				"title": "transformToLowercase"
-			},
-			{
-				"command": "text-utils.extension.transformToUppercase",
-				"title": "transformToUppercase"
-			},
-			{
-				"command": "text-utils.extension.transformToTitleCase",
-				"title": "transformToTitleCase"
-			},
-			{
-				"command": "text-utils.extension.transformToUnorderedList",
-				"title": "transformToUnorderedList"
-			},
-			{
-				"command": "text-utils.extension.transformToOrdededList",
-				"title": "transformToOrdededList"
-			},
-			{
-				"command": "text-utils.extension.base64Encode",
-				"title": "base64Encode"
-			},
-			{
-				"command": "text-utils.extension.base64Decode",
-				"title": "base64Decode"
-			}
-		],
-		"menus": {
-			"editor/context": [
-				{
-					"command": "text-utils.extension.checkTaskList",
-					"when": "editorTextFocus"
-				},
-				{
-					"command": "text-utils.extension.reverseWord",
-					"when": "editorHasSelection"
-				},
-				{
-					"command": "text-utils.extension.transformToLowercase",
-					"title": "editorHasSelection"
-				},
-				{
-					"command": "text-utils.extension.transformToUppercase",
-					"title": "editorHasSelection"
-				},
-				{
-					"command": "text-utils.extension.transformToTitleCase",
-					"when": "editorHasSelection"
-				},
-				{
-					"command": "text-utils.extension.transformToUnorderedList",
-					"when": "editorHasSelection"
-				},
-				{
-					"command": "text-utils.extension.transformToOrdededList",
-					"when": "editorHasSelection"
-				},
-				{
-					"command": "text-utils.extension.base64Encode",
-					"title": "editorHasSelection"
-				},
-				{
-					"command": "text-utils.extension.base64Decode",
-					"title": "editorHasSelection"
-				}
-			]
-		},
-		"keybindings":[
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "text-utils.extension.checkTaskList",
+                "title": "checkTaskList"
+            },
+            {
+                "command": "text-utils.extension.reverseWord",
+                "title": "reverseWord"
+            },
+            {
+                "command": "text-utils.extension.transformToLowercase",
+                "title": "transformToLowercase"
+            },
+            {
+                "command": "text-utils.extension.transformToUppercase",
+                "title": "transformToUppercase"
+            },
+            {
+                "command": "text-utils.extension.transformToTitleCase",
+                "title": "transformToTitleCase"
+            },
+            {
+                "command": "text-utils.extension.transformToUnorderedList",
+                "title": "transformToUnorderedList"
+            },
+            {
+                "command": "text-utils.extension.transformToOrdededList",
+                "title": "transformToOrdededList"
+            },
+            {
+                "command": "text-utils.extension.base64Encode",
+                "title": "base64Encode"
+            },
+            {
+                "command": "text-utils.extension.base64Decode",
+                "title": "base64Decode"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "text-utils.extension.checkTaskList",
+                    "when": "editorTextFocus"
+                },
+                {
+                    "command": "text-utils.extension.reverseWord",
+                    "when": "editorHasSelection"
+                },
+                {
+                    "command": "text-utils.extension.transformToLowercase",
+                    "title": "editorHasSelection"
+                },
+                {
+                    "command": "text-utils.extension.transformToUppercase",
+                    "title": "editorHasSelection"
+                },
+                {
+                    "command": "text-utils.extension.transformToTitleCase",
+                    "when": "editorHasSelection"
+                },
+                {
+                    "command": "text-utils.extension.transformToUnorderedList",
+                    "when": "editorHasSelection"
+                },
+                {
+                    "command": "text-utils.extension.transformToOrdededList",
+                    "when": "editorHasSelection"
+                },
+                {
+                    "command": "text-utils.extension.base64Encode",
+                    "title": "editorHasSelection"
+                },
+                {
+                    "command": "text-utils.extension.base64Decode",
+                    "title": "editorHasSelection"
+                }
+            ]
+        },
+        "keybindings": [
             {
                 "command": "text-utils.extension.checkTaskList",
                 "key": "alt+c",
                 "when": "editorTextFocus"
             }
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.51.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.0",
-		"@types/node": "^12.11.7",
-		"eslint": "^7.9.0",
-		"@typescript-eslint/eslint-plugin": "^4.1.1",
-		"@typescript-eslint/parser": "^4.1.1",
-		"glob": "^7.1.6",
-		"mocha": "^8.1.3",
-		"typescript": "^4.0.2",
-		"vscode-test": "^1.4.0"
-	}
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.3",
+        "@types/mocha": "^8.0.0",
+        "@types/node": "^12.11.7",
+        "@types/vscode": "^1.51.0",
+        "@typescript-eslint/eslint-plugin": "^4.1.1",
+        "@typescript-eslint/parser": "^4.1.1",
+        "eslint": "^7.9.0",
+        "glob": "^7.1.6",
+        "mocha": "^8.1.3",
+        "typescript": "^4.0.2",
+        "vsce": "^1.81.1",
+        "vscode-test": "^1.4.0"
+    }
 }
