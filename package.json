@@ -100,7 +100,7 @@
         "keybindings": [
             {
                 "command": "text-utils.extension.checkTaskList",
-                "key": "alt+c",
+                "key": "alt+x",
                 "when": "editorTextFocus"
             }
         ]

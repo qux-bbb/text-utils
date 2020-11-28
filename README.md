@@ -3,7 +3,7 @@
 ## Intro
 
 Text formatting tool, right-click to select the function, the existing functions are as follows：  
-1. TODO list (shortcut key: Alt + C)
+1. TODO list (shortcut key: Alt + X)
 2. string Reverse
 3. string to lowercase
 4. string to uppercase
@@ -11,6 +11,12 @@ Text formatting tool, right-click to select the function, the existing functions
 6. generate unordered list
 7. generate ordered list
 8. base64 encode/decode
+
+TODO example:  
+```
+[ ] hello world
+[x] good morning
+```
 
 
 ## How to install
