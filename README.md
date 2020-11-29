@@ -4,7 +4,7 @@
 
 Text formatting tool, right-click to select the function, the existing functions are as follows：  
 1. TODO list (shortcut key: Alt + X)
-2. string Reverse
+2. string reverse
 3. string to lowercase
 4. string to uppercase
 5. string to titlecase

@@ -61,39 +61,48 @@
             "editor/context": [
                 {
                     "command": "text-utils.extension.checkTaskList",
-                    "when": "editorTextFocus"
+                    "when": "editorTextFocus",
+                    "group": "text-utils@1"
                 },
                 {
                     "command": "text-utils.extension.reverseString",
-                    "when": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@2"
                 },
                 {
                     "command": "text-utils.extension.transformToLowercase",
-                    "title": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@3"
                 },
                 {
                     "command": "text-utils.extension.transformToUppercase",
-                    "title": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@3"
                 },
                 {
                     "command": "text-utils.extension.transformToTitleCase",
-                    "when": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@3"
                 },
                 {
                     "command": "text-utils.extension.transformToUnorderedList",
-                    "when": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@4"
                 },
                 {
                     "command": "text-utils.extension.transformToOrdededList",
-                    "when": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@4"
                 },
                 {
                     "command": "text-utils.extension.base64Encode",
-                    "title": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@5"
                 },
                 {
                     "command": "text-utils.extension.base64Decode",
-                    "title": "editorHasSelection"
+                    "when": "editorHasSelection",
+                    "group": "text-utils@5"
                 }
             ]
         },
