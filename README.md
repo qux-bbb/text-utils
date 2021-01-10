@@ -14,8 +14,8 @@ Text formatting tool, right-click to select the function, the existing functions
 
 TODO example:  
 ```
-[ ] hello world
-[x] good morning
+- [ ] hello world
+- [x] good morning
 ```
 
 

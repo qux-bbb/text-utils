@@ -14,8 +14,8 @@
 
 TODO 示例:  
 ```
-[ ] hello world
-[x] good morning
+- [ ] hello world
+- [x] good morning
 ```
 
 ## 安装方式
