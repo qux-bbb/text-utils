@@ -9,7 +9,7 @@ export function checkTaskList() {
 
     const uncheckedRegex = /^(\s*- \[) \]/;
     const checkedRegex = /^(\s*- \[)x\]/;
-    const whiteSpaceRegex = /^(\s*)\S/;  // \w Ensure at least one non whitespace character.
+    const whiteSpaceRegex = /^(\s*)\S/;  // \S Ensure at least one non whitespace character.
 
     let toBeToggled: {position:Position, state: string}[] = []; // All spots that have an "[x]" resp. "[ ]" which should be toggled.
     let needAddTodo: Position[] = [];
