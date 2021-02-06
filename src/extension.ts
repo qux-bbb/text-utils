@@ -1,7 +1,7 @@
 import { commands, ExtensionContext } from 'vscode';
 import { base64Encode, base64Decode } from "./base64";
 import { checkTaskList } from './checkTaskList';
-import { transformToUnorderedList, transformToOrdededList } from './list';
+import { transformToUnorderedList, transformToOrderedList } from './list';
 import { reverseString, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
 
 export function activate(context: ExtensionContext) {
@@ -13,7 +13,7 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.transformToUppercase', transformToUppercase),
 		commands.registerCommand('text-utils.extension.transformToTitleCase', transformToTitleCase),
 		commands.registerCommand('text-utils.extension.transformToUnorderedList', transformToUnorderedList),
-		commands.registerCommand('text-utils.extension.transformToOrdededList', transformToOrdededList),
+		commands.registerCommand('text-utils.extension.transformToOrderedList', transformToOrderedList),
 		commands.registerCommand('text-utils.extension.base64Encode', base64Encode),
 		commands.registerCommand('text-utils.extension.base64Decode', base64Decode),
     );

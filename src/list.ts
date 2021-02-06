@@ -10,7 +10,7 @@ export function transformToUnorderedList () {
     setSelectionString(theLines.join('\n'));
 }
 
-export function transformToOrdededList () {
+export function transformToOrderedList () {
 	let theString = getSelectionString();
 	if (!theString)
 		{return;}

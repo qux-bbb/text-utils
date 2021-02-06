@@ -45,8 +45,8 @@
                 "title": "To UnorderedList"
             },
             {
-                "command": "text-utils.extension.transformToOrdededList",
-                "title": "To OrdededList"
+                "command": "text-utils.extension.transformToOrderedList",
+                "title": "To OrderedList"
             },
             {
                 "command": "text-utils.extension.base64Encode",
@@ -107,7 +107,7 @@
                     "group": "text-utils@4"
                 },
                 {
-                    "command": "text-utils.extension.transformToOrdededList",
+                    "command": "text-utils.extension.transformToOrderedList",
                     "when": "editorHasSelection",
                     "group": "text-utils@4"
                 }
