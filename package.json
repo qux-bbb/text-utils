@@ -70,6 +70,21 @@
                     "group": "text-utils@2"
                 },
                 {
+                    "submenu": "text-utils/case",
+                    "group": "text-utils@3"
+                },
+                {
+                    "submenu": "text-utils/list",
+                    "group": "text-utils@4"
+                },
+                {
+                    "submenu": "text-utils/base64",
+                    "group": "text-utils@5"
+                }
+
+            ],
+            "text-utils/case":[
+                {
                     "command": "text-utils.extension.transformToLowercase",
                     "when": "editorHasSelection",
                     "group": "text-utils@3"
@@ -83,7 +98,9 @@
                     "command": "text-utils.extension.transformToTitleCase",
                     "when": "editorHasSelection",
                     "group": "text-utils@3"
-                },
+                }
+            ],
+            "text-utils/list":[
                 {
                     "command": "text-utils.extension.transformToUnorderedList",
                     "when": "editorHasSelection",
@@ -93,7 +110,9 @@
                     "command": "text-utils.extension.transformToOrdededList",
                     "when": "editorHasSelection",
                     "group": "text-utils@4"
-                },
+                }
+            ],
+            "text-utils/base64":[
                 {
                     "command": "text-utils.extension.base64Encode",
                     "when": "editorHasSelection",
@@ -106,6 +125,20 @@
                 }
             ]
         },
+        "submenus": [
+            {
+                "id": "text-utils/case",
+                "label": "Case"
+            },
+            {
+                "id": "text-utils/list",
+                "label": "List"
+            },
+            {
+                "id": "text-utils/base64",
+                "label": "Base64"
+            }
+        ],
         "keybindings": [
             {
                 "command": "text-utils.extension.checkTaskList",
