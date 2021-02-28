@@ -3,6 +3,7 @@ import { base64Encode, base64Decode } from "./base64";
 import { checkTaskList } from './checkTaskList';
 import { transformToUnorderedList, transformToOrderedList } from './list';
 import { reverseString, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
+import { aesEncryptStr, aesDecryptStr } from './aes';
 
 export function activate(context: ExtensionContext) {
 
@@ -16,6 +17,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.transformToOrderedList', transformToOrderedList),
 		commands.registerCommand('text-utils.extension.base64Encode', base64Encode),
 		commands.registerCommand('text-utils.extension.base64Decode', base64Decode),
+		commands.registerCommand('text-utils.extension.aesEncryptStr', aesEncryptStr),
+		commands.registerCommand('text-utils.extension.aesDecryptStr', aesDecryptStr),
     );
 }
 

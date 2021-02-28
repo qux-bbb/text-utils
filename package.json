@@ -55,6 +55,14 @@
             {
                 "command": "text-utils.extension.base64Decode",
                 "title": "Base64 Decode"
+            },
+            {
+                "command": "text-utils.extension.aesEncryptStr",
+                "title": "AES Encrypt Str"
+            },
+            {
+                "command": "text-utils.extension.aesDecryptStr",
+                "title": "AES Decrypt Str"
             }
         ],
         "menus": {
@@ -80,8 +88,11 @@
                 {
                     "submenu": "text-utils/base64",
                     "group": "text-utils@5"
+                },
+                {
+                    "submenu": "text-utils/aes",
+                    "group": "text-utils@6"
                 }
-
             ],
             "text-utils/case":[
                 {
@@ -123,6 +134,18 @@
                     "when": "editorHasSelection",
                     "group": "text-utils@5"
                 }
+            ],
+            "text-utils/aes":[
+                {
+                    "command": "text-utils.extension.aesEncryptStr",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@6"
+                },
+                {
+                    "command": "text-utils.extension.aesDecryptStr",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@6"
+                }
             ]
         },
         "submenus": [
@@ -137,6 +160,10 @@
             {
                 "id": "text-utils/base64",
                 "label": "Base64"
+            },
+            {
+                "id": "text-utils/aes",
+                "label": "AES"
             }
         ],
         "keybindings": [
