@@ -63,6 +63,14 @@
             {
                 "command": "text-utils.extension.aesDecryptStr",
                 "title": "AES Decrypt Str"
+            },
+            {
+                "command": "text-utils.extension.aesEncryptFile",
+                "title": "AES Encrypt File"
+            },
+            {
+                "command": "text-utils.extension.aesDecryptFile",
+                "title": "AES Decrypt File"
             }
         ],
         "menus": {
@@ -144,6 +152,14 @@
                 {
                     "command": "text-utils.extension.aesDecryptStr",
                     "when": "editorHasSelection",
+                    "group": "text-utils@6"
+                },
+                {
+                    "command": "text-utils.extension.aesEncryptFile",
+                    "group": "text-utils@6"
+                },
+                {
+                    "command": "text-utils.extension.aesDecryptFile",
                     "group": "text-utils@6"
                 }
             ]

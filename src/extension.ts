@@ -3,10 +3,9 @@ import { base64Encode, base64Decode } from "./base64";
 import { checkTaskList } from './checkTaskList';
 import { transformToUnorderedList, transformToOrderedList } from './list';
 import { reverseString, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
-import { aesEncryptStr, aesDecryptStr } from './aes';
+import { aesEncryptStr, aesDecryptStr, aesEncryptFile, aesDecryptFile } from './aes';
 
 export function activate(context: ExtensionContext) {
-
     context.subscriptions.push(
 		commands.registerCommand('text-utils.extension.checkTaskList', checkTaskList),
 		commands.registerCommand('text-utils.extension.reverseString', reverseString),
@@ -19,6 +18,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.base64Decode', base64Decode),
 		commands.registerCommand('text-utils.extension.aesEncryptStr', aesEncryptStr),
 		commands.registerCommand('text-utils.extension.aesDecryptStr', aesDecryptStr),
+		commands.registerCommand('text-utils.extension.aesEncryptFile', aesEncryptFile),
+		commands.registerCommand('text-utils.extension.aesDecryptFile', aesDecryptFile),
     );
 }
 
