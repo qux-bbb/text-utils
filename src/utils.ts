@@ -1,4 +1,4 @@
-import { window, Selection, Position } from "vscode";
+import { window, Selection, Position } from 'vscode';
 
 
 export function getSelectionString () {

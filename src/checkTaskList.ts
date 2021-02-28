@@ -1,4 +1,4 @@
-import { Position, Range, window } from "vscode";
+import { Position, Range, window } from 'vscode';
 
 export function checkTaskList() {
 	// Refer to this link: https://github.com/yzhang-gh/vscode-markdown/blob/ff79b2e7a69dcbfd04d5c289999c1a09ef784e61/src/listEditing.ts#L409

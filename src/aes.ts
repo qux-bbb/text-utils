@@ -3,9 +3,9 @@ reference:
 https://nodejs.org/api/crypto.html
 https://attacomsian.com/blog/nodejs-encrypt-decrypt-data
 */
-const { randomBytes, scryptSync, createCipheriv, createDecipheriv } = require("crypto");
-import { window } from "vscode";
-import { getSelectionString, setSelectionString, getFileString, setFileString } from "./utils";
+const { randomBytes, scryptSync, createCipheriv, createDecipheriv } = require('crypto');
+import { window } from 'vscode';
+import { getSelectionString, setSelectionString, getFileString, setFileString } from './utils';
 
 
 const algorithm = 'aes-256-cbc';

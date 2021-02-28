@@ -1,4 +1,4 @@
-import { getSelectionString, setSelectionString } from "./utils";
+import { getSelectionString, setSelectionString } from './utils';
 
 
 const baseDict = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';

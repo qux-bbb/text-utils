@@ -1,4 +1,4 @@
-import { getSelectionString, setSelectionString } from "./utils";
+import { getSelectionString, setSelectionString } from './utils';
 
 export function reverseString () {
 	let theString = getSelectionString();
