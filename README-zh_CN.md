@@ -39,3 +39,4 @@ TODO 示例:
 4. https://marketplace.visualstudio.com/items?itemName=RushFrisby.Encryptor  
 5. https://nodejs.org/api/crypto.html  
 6. https://attacomsian.com/blog/nodejs-encrypt-decrypt-data  
+7. https://github.com/adamhartford/vscode-base64  
