@@ -2,7 +2,8 @@
     "name": "text-utils",
     "displayName": "text-utils",
     "description": "Simple Text Utils",
-    "version": "0.0.4",
+    "icon": "icon.png",
+    "version": "0.0.5",
     "publisher": "qux-bbb",
     "engines": {
         "vscode": "^1.51.0"
