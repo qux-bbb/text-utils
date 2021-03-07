@@ -59,7 +59,7 @@ export function base64Encode () {
 	let theString = getSelectionString();
 	if (!theString)
 		{return;}
-	const resultString = myBase64Encode(theString);
+	const resultString = myBase64Encode(encodeURI(theString));
 
 	setSelectionString(resultString);
 }
@@ -70,7 +70,7 @@ export function base64Decode () {
 		{return;}
 	theString = theString + new Array(theString.length % 4).join('=');
 
-	const resultString = myBase64Decode(theString);
+	const resultString = decodeURI(myBase64Decode(theString));
 
 	setSelectionString(resultString);
 }
