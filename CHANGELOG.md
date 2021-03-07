@@ -1,9 +1,12 @@
 # Change Log
 
-All notable changes to the "text-utils" extension will be documented in this file.
+## 0.0.5
+- base64 supports Chinese
+- add an icon
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.0.4
+- add aes func
+- adjust submenu
 
-## [Unreleased]
-
-- Initial release
+## earlier
+- basic funcs
