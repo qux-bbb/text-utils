@@ -31,47 +31,47 @@
             },
             {
                 "command": "text-utils.extension.transformToLowercase",
-                "title": "To Lowercase"
+                "title": "1. To Lowercase"
             },
             {
                 "command": "text-utils.extension.transformToUppercase",
-                "title": "To Uppercase"
+                "title": "2. To Uppercase"
             },
             {
                 "command": "text-utils.extension.transformToTitleCase",
-                "title": "To Titlecase"
+                "title": "3. To Titlecase"
             },
             {
                 "command": "text-utils.extension.transformToUnorderedList",
-                "title": "To UnorderedList"
+                "title": "1. To UnorderedList"
             },
             {
                 "command": "text-utils.extension.transformToOrderedList",
-                "title": "To OrderedList"
+                "title": "2. To OrderedList"
             },
             {
                 "command": "text-utils.extension.base64Encode",
-                "title": "Base64 Encode"
+                "title": "1. Base64 Encode"
             },
             {
                 "command": "text-utils.extension.base64Decode",
-                "title": "Base64 Decode"
+                "title": "2. Base64 Decode"
             },
             {
                 "command": "text-utils.extension.aesEncryptStr",
-                "title": "AES Encrypt Str"
+                "title": "1. AES Encrypt Str"
             },
             {
                 "command": "text-utils.extension.aesDecryptStr",
-                "title": "AES Decrypt Str"
+                "title": "2. AES Decrypt Str"
             },
             {
                 "command": "text-utils.extension.aesEncryptFile",
-                "title": "AES Encrypt File"
+                "title": "3. AES Encrypt File"
             },
             {
                 "command": "text-utils.extension.aesDecryptFile",
-                "title": "AES Decrypt File"
+                "title": "4. AES Decrypt File"
             }
         ],
         "menus": {
