@@ -3,7 +3,7 @@
     "displayName": "text-utils",
     "description": "Simple Text Utils",
     "icon": "icon.png",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "qux-bbb",
     "engines": {
         "vscode": "^1.51.0"

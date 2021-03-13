@@ -12,6 +12,8 @@ Text formatting tool, right-click to select the function, the existing functions
 7. generate ordered list
 8. base64 encode/decode
 9. AES encrypt/decrypt
+10. uri encode/decode
+11. unicode encode/decode
 
 TODO example:  
 ```
