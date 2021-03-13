@@ -72,6 +72,14 @@
             {
                 "command": "text-utils.extension.aesDecryptFile",
                 "title": "4. AES Decrypt File"
+            },
+            {
+                "command": "text-utils.extension.uriEncode",
+                "title": "1. URI Encode"
+            },
+            {
+                "command": "text-utils.extension.uriDecode",
+                "title": "2. URI Decode"
             }
         ],
         "menus": {
@@ -101,6 +109,10 @@
                 {
                     "submenu": "text-utils/aes",
                     "group": "text-utils@6"
+                },
+                {
+                    "submenu": "text-utils/uri",
+                    "group": "text-utils@7"
                 }
             ],
             "text-utils/case":[
@@ -163,6 +175,18 @@
                     "command": "text-utils.extension.aesDecryptFile",
                     "group": "text-utils@6"
                 }
+            ],
+            "text-utils/uri":[
+                {
+                    "command": "text-utils.extension.uriEncode",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@7"
+                },
+                {
+                    "command": "text-utils.extension.uriDecode",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@7"
+                }
             ]
         },
         "submenus": [
@@ -181,6 +205,10 @@
             {
                 "id": "text-utils/aes",
                 "label": "AES"
+            },
+            {
+                "id": "text-utils/uri",
+                "label": "URI"
             }
         ],
         "keybindings": [

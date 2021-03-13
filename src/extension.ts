@@ -4,6 +4,7 @@ import { checkTaskList } from './checkTaskList';
 import { transformToUnorderedList, transformToOrderedList } from './list';
 import { reverseString, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
 import { aesEncryptStr, aesDecryptStr, aesEncryptFile, aesDecryptFile } from './aes';
+import { uriEncode, uriDecode } from './uri';
 
 export function activate(context: ExtensionContext) {
     context.subscriptions.push(
@@ -20,6 +21,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.aesDecryptStr', aesDecryptStr),
 		commands.registerCommand('text-utils.extension.aesEncryptFile', aesEncryptFile),
 		commands.registerCommand('text-utils.extension.aesDecryptFile', aesDecryptFile),
+		commands.registerCommand('text-utils.extension.uriEncode', uriEncode),
+		commands.registerCommand('text-utils.extension.uriDecode', uriDecode),
     );
 }
 
