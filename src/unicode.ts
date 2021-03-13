@@ -5,7 +5,7 @@ export function unicodeEncode () {
 	if (!theString)
 		{return;}
 
-    const resultString = escape(theString).replace(/%u/g, "\\u");
+    const resultString = unescape(escape(theString).replace(/%u/g, "\\u"));
 
 	setSelectionString(resultString);
 }
