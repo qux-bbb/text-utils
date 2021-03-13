@@ -80,6 +80,14 @@
             {
                 "command": "text-utils.extension.uriDecode",
                 "title": "2. URI Decode"
+            },
+            {
+                "command": "text-utils.extension.unicodeEncode",
+                "title": "1. Unicode Encode"
+            },
+            {
+                "command": "text-utils.extension.unicodeDecode",
+                "title": "2. Unicode Decode"
             }
         ],
         "menus": {
@@ -113,6 +121,10 @@
                 {
                     "submenu": "text-utils/uri",
                     "group": "text-utils@7"
+                },
+                {
+                    "submenu": "text-utils/unicode",
+                    "group": "text-utils@8"
                 }
             ],
             "text-utils/case":[
@@ -187,6 +199,18 @@
                     "when": "editorHasSelection",
                     "group": "text-utils@7"
                 }
+            ],
+            "text-utils/unicode":[
+                {
+                    "command": "text-utils.extension.unicodeEncode",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@8"
+                },
+                {
+                    "command": "text-utils.extension.unicodeDecode",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@8"
+                }
             ]
         },
         "submenus": [
@@ -209,6 +233,10 @@
             {
                 "id": "text-utils/uri",
                 "label": "URI"
+            },
+            {
+                "id": "text-utils/unicode",
+                "label": "Unicode"
             }
         ],
         "keybindings": [

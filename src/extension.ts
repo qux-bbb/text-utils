@@ -1,10 +1,11 @@
 import { commands, ExtensionContext } from 'vscode';
-import { base64Encode, base64Decode } from "./base64";
+import { base64Encode, base64Decode } from './base64';
 import { checkTaskList } from './checkTaskList';
 import { transformToUnorderedList, transformToOrderedList } from './list';
 import { reverseString, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
 import { aesEncryptStr, aesDecryptStr, aesEncryptFile, aesDecryptFile } from './aes';
 import { uriEncode, uriDecode } from './uri';
+import { unicodeEncode, unicodeDecode } from './unicode';
 
 export function activate(context: ExtensionContext) {
     context.subscriptions.push(
@@ -23,6 +24,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.aesDecryptFile', aesDecryptFile),
 		commands.registerCommand('text-utils.extension.uriEncode', uriEncode),
 		commands.registerCommand('text-utils.extension.uriDecode', uriDecode),
+		commands.registerCommand('text-utils.extension.unicodeEncode', unicodeEncode),
+		commands.registerCommand('text-utils.extension.unicodeDecode', unicodeDecode),
     );
 }
 
