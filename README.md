@@ -5,15 +5,12 @@
 Text formatting tool, right-click to select the function, the existing functions are as follows：  
 1. TODO list (shortcut key: Alt + X)
 2. string reverse
-3. string to lowercase
-4. string to uppercase
-5. string to titlecase
-6. generate unordered list
-7. generate ordered list
-8. base64 encode/decode
-9. AES encrypt/decrypt
-10. uri encode/decode
-11. unicode encode/decode
+3. string to lowercase/uppercase/titlecase
+4. generate ordered/unordered list
+5. base64 encode/decode
+6. AES encrypt/decrypt
+7. uri encode/decode
+8. unicode encode/decode
 
 TODO example:  
 ```
