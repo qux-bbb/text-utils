@@ -1,7 +1,7 @@
 {
     "name": "text-utils",
-    "displayName": "text-utils",
-    "description": "Simple Text Utils",
+    "displayName": "%ext.displayName%",
+    "description": "%ext.description%",
     "icon": "icon.png",
     "version": "0.0.6",
     "publisher": "qux-bbb",
@@ -23,75 +23,75 @@
         "commands": [
             {
                 "command": "text-utils.extension.checkTaskList",
-                "title": "Check TODO"
+                "title": "%checkTaskList.title%"
             },
             {
                 "command": "text-utils.extension.reverseString",
-                "title": "Reverse String"
+                "title": "%reverseString.title%"
             },
             {
                 "command": "text-utils.extension.transformToLowercase",
-                "title": "1. To Lowercase"
+                "title": "%transformToLowercase.title%"
             },
             {
                 "command": "text-utils.extension.transformToUppercase",
-                "title": "2. To Uppercase"
+                "title": "%transformToUppercase.title%"
             },
             {
                 "command": "text-utils.extension.transformToTitleCase",
-                "title": "3. To Titlecase"
+                "title": "%transformToTitleCase.title%"
             },
             {
                 "command": "text-utils.extension.transformToUnorderedList",
-                "title": "1. To UnorderedList"
+                "title": "%transformToUnorderedList.title%"
             },
             {
                 "command": "text-utils.extension.transformToOrderedList",
-                "title": "2. To OrderedList"
+                "title": "%transformToOrderedList.title%"
             },
             {
                 "command": "text-utils.extension.base64Encode",
-                "title": "1. Base64 Encode"
+                "title": "%base64Encode.title%"
             },
             {
                 "command": "text-utils.extension.base64Decode",
-                "title": "2. Base64 Decode"
+                "title": "%base64Decode.title%"
             },
             {
                 "command": "text-utils.extension.aesEncryptStr",
-                "title": "1. AES Encrypt Str"
+                "title": "%aesEncryptStr.title%"
             },
             {
                 "command": "text-utils.extension.aesDecryptStr",
-                "title": "2. AES Decrypt Str"
+                "title": "%aesDecryptStr.title%"
             },
             {
                 "command": "text-utils.extension.aesEncryptFile",
-                "title": "3. AES Encrypt File"
+                "title": "%aesEncryptFile.title%"
             },
             {
                 "command": "text-utils.extension.aesDecryptFile",
-                "title": "4. AES Decrypt File"
+                "title": "%aesDecryptFile.title%"
             },
             {
                 "command": "text-utils.extension.uriEncode",
-                "title": "1. URI Encode"
+                "title": "%uriEncode.title%"
             },
             {
                 "command": "text-utils.extension.uriDecode",
-                "title": "2. URI Decode"
+                "title": "%uriDecode.title%"
             },
             {
                 "command": "text-utils.extension.unicodeEncode",
-                "title": "1. Unicode Encode"
+                "title": "%unicodeEncode.title%"
             },
             {
                 "command": "text-utils.extension.unicodeDecode",
-                "title": "2. Unicode Decode"
+                "title": "%unicodeDecode.title%"
             },
             {
                 "command": "text-utils.extension.theDate",
-                "title": "The Date"
+                "title": "%theDate.title%"
             }
         ],
         "menus": {
@@ -224,27 +224,27 @@
         "submenus": [
             {
                 "id": "text-utils/case",
-                "label": "Case"
+                "label": "%case.label%"
             },
             {
                 "id": "text-utils/list",
-                "label": "List"
+                "label": "%list.label%"
             },
             {
                 "id": "text-utils/base64",
-                "label": "Base64"
+                "label": "%base64.label%"
             },
             {
                 "id": "text-utils/aes",
-                "label": "AES"
+                "label": "%aes.label%"
             },
             {
                 "id": "text-utils/uri",
-                "label": "URI"
+                "label": "%uri.label%"
             },
             {
                 "id": "text-utils/unicode",
-                "label": "Unicode"
+                "label": "%unicode.label%"
             }
         ],
         "keybindings": [
