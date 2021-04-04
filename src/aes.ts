@@ -17,13 +17,14 @@ function encrypt (text:string, password:string) {
     const cipher = createCipheriv(algorithm, secretKey, iv);
     const encrypted = Buffer.concat([cipher.update(text), cipher.final()]);
 
-    return [iv.toString('hex'), encrypted.toString('hex')].join('');
+    return [iv.toString('hex'), encrypted.toString('hex')].join(':');
 };
 
 
 function decrypt (hex_str:string, password:string) {
-    const iv = Buffer.from(hex_str.substr(0, 32), 'hex');
-    const encrypted = Buffer.from(hex_str.substr(32), 'hex');
+    const [ivHex, encryptedHex] = hex_str.split(':')
+    const iv = Buffer.from(ivHex, 'hex');
+    const encrypted = Buffer.from(encryptedHex, 'hex');
     const secretKey = scryptSync(password, 'salt', 32);
 
     const decipher = createDecipheriv(algorithm, secretKey, iv);
