@@ -11,6 +11,7 @@ Text formatting tool, right-click to select the function, the existing functions
 6. AES encrypt/decrypt
 7. uri encode/decode
 8. unicode encode/decode
+9. print today date
 
 TODO example:  
 ```

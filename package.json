@@ -88,6 +88,10 @@
             {
                 "command": "text-utils.extension.unicodeDecode",
                 "title": "2. Unicode Decode"
+            },
+            {
+                "command": "text-utils.extension.theDate",
+                "title": "The Date"
             }
         ],
         "menus": {
@@ -125,6 +129,10 @@
                 {
                     "submenu": "text-utils/unicode",
                     "group": "text-utils@8"
+                },
+                {
+                    "command": "text-utils.extension.theDate",
+                    "group": "text-utils@9"
                 }
             ],
             "text-utils/case":[
