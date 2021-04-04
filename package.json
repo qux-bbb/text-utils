@@ -3,7 +3,7 @@
     "displayName": "%ext.displayName%",
     "description": "%ext.description%",
     "icon": "icon.png",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "qux-bbb",
     "engines": {
         "vscode": "^1.51.0"

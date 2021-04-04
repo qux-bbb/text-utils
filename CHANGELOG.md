@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.7
+- add date
+- adjust aes: separate iv and encrypted by colon
+- localization
+
 ## 0.0.6
 - fix base64
 - add uri func
