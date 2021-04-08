@@ -5,7 +5,7 @@ export function unicodeEncode () {
 	if (!theString)
 		{return;}
 
-    const resultString = unescape(escape(theString).replace(/%u/g, "\\u"));
+    const resultString = unescape(escape(theString).replace(/%u(?=[0-9A-F]{4})/g, "\\u"));
 
 	setSelectionString(resultString);
 }
@@ -15,7 +15,7 @@ export function unicodeDecode () {
 	if (!theString)
 		{return;}
 
-	const resultString = unescape(theString.replace(/\\u/g, "%u"));
+	const resultString = unescape(theString.replace(/\\u(?=[0-9A-F]{4})/g, "%u"));
 
 	setSelectionString(resultString);
 }
