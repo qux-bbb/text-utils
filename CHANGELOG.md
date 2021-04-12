@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.8
+- fix unicode decode error
+
 ## 0.0.7
 - add date
 - adjust aes: separate iv and encrypted by colon
