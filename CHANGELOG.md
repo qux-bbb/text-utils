@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.9
+- fix unicode decode error again
+
 ## 0.0.8
 - fix unicode decode error
 
