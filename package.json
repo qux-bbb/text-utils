@@ -139,85 +139,85 @@
                 {
                     "command": "text-utils.extension.transformToLowercase",
                     "when": "editorHasSelection",
-                    "group": "text-utils@3"
+                    "group": "text-utils@3@1"
                 },
                 {
                     "command": "text-utils.extension.transformToUppercase",
                     "when": "editorHasSelection",
-                    "group": "text-utils@3"
+                    "group": "text-utils@3@2"
                 },
                 {
                     "command": "text-utils.extension.transformToTitleCase",
                     "when": "editorHasSelection",
-                    "group": "text-utils@3"
+                    "group": "text-utils@3@3"
                 }
             ],
             "text-utils/list":[
                 {
                     "command": "text-utils.extension.transformToUnorderedList",
                     "when": "editorHasSelection",
-                    "group": "text-utils@4"
+                    "group": "text-utils@4@1"
                 },
                 {
                     "command": "text-utils.extension.transformToOrderedList",
                     "when": "editorHasSelection",
-                    "group": "text-utils@4"
+                    "group": "text-utils@4@2"
                 }
             ],
             "text-utils/base64":[
                 {
                     "command": "text-utils.extension.base64Encode",
                     "when": "editorHasSelection",
-                    "group": "text-utils@5"
+                    "group": "text-utils@5@1"
                 },
                 {
                     "command": "text-utils.extension.base64Decode",
                     "when": "editorHasSelection",
-                    "group": "text-utils@5"
+                    "group": "text-utils@5@2"
                 }
             ],
             "text-utils/aes":[
                 {
                     "command": "text-utils.extension.aesEncryptStr",
                     "when": "editorHasSelection",
-                    "group": "text-utils@6"
+                    "group": "text-utils@6@1"
                 },
                 {
                     "command": "text-utils.extension.aesDecryptStr",
                     "when": "editorHasSelection",
-                    "group": "text-utils@6"
+                    "group": "text-utils@6@2"
                 },
                 {
                     "command": "text-utils.extension.aesEncryptFile",
-                    "group": "text-utils@6"
+                    "group": "text-utils@6@3"
                 },
                 {
                     "command": "text-utils.extension.aesDecryptFile",
-                    "group": "text-utils@6"
+                    "group": "text-utils@6@4"
                 }
             ],
             "text-utils/uri":[
                 {
                     "command": "text-utils.extension.uriEncode",
                     "when": "editorHasSelection",
-                    "group": "text-utils@7"
+                    "group": "text-utils@7@1"
                 },
                 {
                     "command": "text-utils.extension.uriDecode",
                     "when": "editorHasSelection",
-                    "group": "text-utils@7"
+                    "group": "text-utils@7@2"
                 }
             ],
             "text-utils/unicode":[
                 {
                     "command": "text-utils.extension.unicodeEncode",
                     "when": "editorHasSelection",
-                    "group": "text-utils@8"
+                    "group": "text-utils@8@1"
                 },
                 {
                     "command": "text-utils.extension.unicodeDecode",
                     "when": "editorHasSelection",
-                    "group": "text-utils@8"
+                    "group": "text-utils@8@2"
                 }
             ]
         },
