@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.1
+- add hex
+
 ## 0.0.9
 - fix unicode decode error again
 
