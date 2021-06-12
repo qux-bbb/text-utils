@@ -18,11 +18,14 @@
     "uriDecode.title": "URI Decode",
     "unicodeEncode.title": "Unicode Encode",
     "unicodeDecode.title": "Unicode Decode",
+    "hexEncode.title": "HEX Encode",
+    "hexDecode.title": "HEX Decode",
     "theDate.title": "The Date",
     "case.label": "Case",
     "list.label": "List",
     "base64.label": "Base64",
     "aes.label": "AES",
     "uri.label": "URI",
-    "unicode.label": "Unicode"
+    "unicode.label": "Unicode",
+    "hex.label": "HEX"
 }

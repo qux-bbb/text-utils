@@ -18,11 +18,14 @@
     "uriDecode.title": "URI 解码",
     "unicodeEncode.title": "Unicode 编码",
     "unicodeDecode.title": "Unicode 解码",
+    "hexEncode.title": "HEX 编码",
+    "hexDecode.title": "HEX 解码",
     "theDate.title": "今日日期",
     "case.label": "大小写",
     "list.label": "列表",
     "base64.label": "Base64",
     "aes.label": "AES",
     "uri.label": "URI",
-    "unicode.label": "Unicode"
+    "unicode.label": "Unicode",
+    "hex.label": "HEX"
 }

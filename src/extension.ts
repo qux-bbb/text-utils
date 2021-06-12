@@ -6,6 +6,7 @@ import { reverseString, transformToLowercase, transformToTitleCase, transformToU
 import { aesEncryptStr, aesDecryptStr, aesEncryptFile, aesDecryptFile } from './aes';
 import { uriEncode, uriDecode } from './uri';
 import { unicodeEncode, unicodeDecode } from './unicode';
+import { hexEncode, hexDecode } from './hex';
 import { theDate } from './date';
 
 export function activate(context: ExtensionContext) {
@@ -27,6 +28,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.uriDecode', uriDecode),
 		commands.registerCommand('text-utils.extension.unicodeEncode', unicodeEncode),
 		commands.registerCommand('text-utils.extension.unicodeDecode', unicodeDecode),
+		commands.registerCommand('text-utils.extension.hexEncode', hexEncode),
+		commands.registerCommand('text-utils.extension.hexDecode', hexDecode),
 		commands.registerCommand('text-utils.extension.theDate', theDate),
     );
 }

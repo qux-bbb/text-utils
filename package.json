@@ -90,6 +90,14 @@
                 "title": "%unicodeDecode.title%"
             },
             {
+                "command": "text-utils.extension.hexEncode",
+                "title": "%hexEncode.title%"
+            },
+            {
+                "command": "text-utils.extension.hexDecode",
+                "title": "%hexDecode.title%"
+            },
+            {
                 "command": "text-utils.extension.theDate",
                 "title": "%theDate.title%"
             }
@@ -131,8 +139,12 @@
                     "group": "text-utils@8"
                 },
                 {
-                    "command": "text-utils.extension.theDate",
+                    "submenu": "text-utils/hex",
                     "group": "text-utils@9"
+                },
+                {
+                    "command": "text-utils.extension.theDate",
+                    "group": "text-utils@10"
                 }
             ],
             "text-utils/case":[
@@ -219,6 +231,18 @@
                     "when": "editorHasSelection",
                     "group": "text-utils@8@2"
                 }
+            ],
+            "text-utils/hex":[
+                {
+                    "command": "text-utils.extension.hexEncode",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@9@1"
+                },
+                {
+                    "command": "text-utils.extension.hexDecode",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@9@2"
+                }
             ]
         },
         "submenus": [
@@ -245,6 +269,10 @@
             {
                 "id": "text-utils/unicode",
                 "label": "%unicode.label%"
+            },
+            {
+                "id": "text-utils/hex",
+                "label": "%hex.label%"
             }
         ],
         "keybindings": [
