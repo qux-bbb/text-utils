@@ -11,12 +11,44 @@
 6. AES加解密
 7. uri编码解码
 8. unicode编码解码
-9. 输出今日日期
+9. hex编码解码
+10. 输出今日日期
 
-TODO 示例:  
+## 示例
 ```
+# TODO
 - [ ] hello world
 - [x] good morning
+
+# string
+HelloWorld -> helloworld
+helloWorld -> HELLOWORLD
+hello world -> Hello World
+
+# list
+1. hello
+2. world
+
+- hello
+- world
+
+# base64
+hello <-> aGVsbG8=
+
+# AES password: world
+hello <-> f3ece8ca48592a397724c026a1d64067:b82580400b5a2c5c12cd9abbfcdd4ef0
+
+# uri
+https://baike.baidu.com/item/你好/32416 <-> https://baike.baidu.com/item/%E4%BD%A0%E5%A5%BD/32416
+
+# unicode
+你好，世界 <-> \u4F60\u597D\uFF0C\u4E16\u754C
+
+# hex
+hello <-> 68656c6c6f
+
+# date
+2021/6/12
 ```
 
 ## 安装方式
