@@ -53,7 +53,7 @@ hello <-> 68656c6c6f
 
 
 ## How to install
-1. Search for 'text utils' from vscode extension window and installation directly  
+1. Search for 'text utils' from vscode extension window and install directly  
 2. Build by yourself  
    After installing node.js, execute the following commands：
    ```sh
