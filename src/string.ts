@@ -5,7 +5,7 @@ export function reverseString () {
 	if (!theString)
         {return;}
         
-    const reversed = theString.split('').reverse().join('');
+    const reversed = theString.split('').reverse().join('').replace(/\n\r/g, '\r\n');
 
     setSelectionString(reversed);
 }
