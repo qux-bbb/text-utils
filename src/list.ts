@@ -5,7 +5,7 @@ export function transformToUnorderedList () {
 	if (!theString)
 		{return;}
 	let theLines = theString.split('\n');
-	theLines = theLines.map(theLine => `- ${theLine}`);
+	theLines = theLines.map(theLine => theLine.replace(/( *)/, '$1- '));
 
     setSelectionString(theLines.join('\n'));
 }
@@ -18,7 +18,7 @@ export function transformToOrderedList () {
     let theLines = theString.split('\n');
 	for (let i = 0; i < theLines.length; i++) {
 		const line = theLines[i];
-		theLines[i] = `${i+1}. ${theLines[i]}`;
+		theLines[i] = theLines[i].replace(/( *)/, `$1${i+1}. `);
 	}
 
     setSelectionString(theLines.join('\n'));
