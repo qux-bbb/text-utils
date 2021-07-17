@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.1.1
+- fix list and reverseString bug
+
 ## 0.1.0
 - add hex
 
