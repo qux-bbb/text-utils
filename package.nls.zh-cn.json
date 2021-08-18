@@ -20,6 +20,8 @@
     "unicodeDecode.title": "解码",
     "hexEncode.title": "编码",
     "hexDecode.title": "解码",
+    "sortLinesByAlpha.title": "按字母顺序",
+    "sortLinesByReverseAlpha.title": "按字母逆序",
     "theDate.title": "今日日期",
     "case.label": "大小写",
     "list.label": "列表",
@@ -27,5 +29,6 @@
     "aes.label": "AES",
     "uri.label": "URI",
     "unicode.label": "Unicode",
-    "hex.label": "HEX"
+    "hex.label": "HEX",
+    "sort.label": "行排序"
 }

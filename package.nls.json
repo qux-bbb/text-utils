@@ -20,6 +20,8 @@
     "unicodeDecode.title": "Decode",
     "hexEncode.title": "Encode",
     "hexDecode.title": "Decode",
+    "sortLinesByAlpha.title": "By Alpha",
+    "sortLinesByReverseAlpha.title": "By Reverse Alpha",
     "theDate.title": "The Date",
     "case.label": "Case",
     "list.label": "List",
@@ -27,5 +29,6 @@
     "aes.label": "AES",
     "uri.label": "URI",
     "unicode.label": "Unicode",
-    "hex.label": "HEX"
+    "hex.label": "HEX",
+    "sort.label": "Sort lines"
 }

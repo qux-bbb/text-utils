@@ -7,6 +7,7 @@ import { aesEncryptStr, aesDecryptStr, aesEncryptFile, aesDecryptFile } from './
 import { uriEncode, uriDecode } from './uri';
 import { unicodeEncode, unicodeDecode } from './unicode';
 import { hexEncode, hexDecode } from './hex';
+import { sortLinesByAlpha, sortLinesByReverseAlpha } from './sort';
 import { theDate } from './date';
 
 export function activate(context: ExtensionContext) {
@@ -30,6 +31,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.unicodeDecode', unicodeDecode),
 		commands.registerCommand('text-utils.extension.hexEncode', hexEncode),
 		commands.registerCommand('text-utils.extension.hexDecode', hexDecode),
+		commands.registerCommand('text-utils.extension.sortLinesByAlpha', sortLinesByAlpha),
+		commands.registerCommand('text-utils.extension.sortLinesByReverseAlpha', sortLinesByReverseAlpha),
 		commands.registerCommand('text-utils.extension.theDate', theDate),
     );
 }

@@ -98,6 +98,14 @@
                 "title": "%hexDecode.title%"
             },
             {
+                "command": "text-utils.extension.sortLinesByAlpha",
+                "title": "%sortLinesByAlpha.title%"
+            },
+            {
+                "command": "text-utils.extension.sortLinesByReverseAlpha",
+                "title": "%sortLinesByReverseAlpha.title%"
+            },
+            {
                 "command": "text-utils.extension.theDate",
                 "title": "%theDate.title%"
             }
@@ -143,8 +151,12 @@
                     "group": "text-utils@9"
                 },
                 {
-                    "command": "text-utils.extension.theDate",
+                    "submenu": "text-utils/sort",
                     "group": "text-utils@10"
+                },
+                {
+                    "command": "text-utils.extension.theDate",
+                    "group": "text-utils@11"
                 }
             ],
             "text-utils/case":[
@@ -243,6 +255,18 @@
                     "when": "editorHasSelection",
                     "group": "text-utils@9@2"
                 }
+            ],
+            "text-utils/sort":[
+                {
+                    "command": "text-utils.extension.sortLinesByAlpha",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@10@1"
+                },
+                {
+                    "command": "text-utils.extension.sortLinesByReverseAlpha",
+                    "when": "editorHasSelection",
+                    "group": "text-utils@10@2"
+                }
             ]
         },
         "submenus": [
@@ -273,6 +297,10 @@
             {
                 "id": "text-utils/hex",
                 "label": "%hex.label%"
+            },
+            {
+                "id": "text-utils/sort",
+                "label": "%sort.label%"
             }
         ],
         "keybindings": [
