@@ -13,9 +13,12 @@ export function base64Decode () {
 	let theString = getSelectionString();
 	if (!theString)
 		{return;}
-	theString = theString + new Array(theString.length % 4).join('=');
 
-	const resultString = Buffer.from(theString, 'base64').toString();
+	let theLines = theString.split('\n');
+	for (let i = 0; i < theLines.length; i++) {
+		theLines[i] = theLines[i] + new Array(theLines[i].length % 4).join('=');
+		theLines[i] = Buffer.from(theLines[i], 'base64').toString();
+	}
 
-	setSelectionString(resultString);
+	setSelectionString(theLines.join('\n'));
 }
