@@ -30,5 +30,16 @@
     "uri.label": "URI",
     "unicode.label": "Unicode",
     "hex.label": "HEX",
-    "sort.label": "行排序"
+    "sort.label": "行排序",
+    "config.checkTaskList.enabled": "启用TODO功能",
+    "config.reverseString.enabled": "启用字符串逆序功能",
+    "config.case.enabled": "启用大小写转换功能",
+    "config.list.enabled": "启用列表生成功能",
+    "config.base64.enabled": "启用Base64编码解码功能",
+    "config.aes.enabled": "启用AES加密解密功能",
+    "config.uri.enabled": "启用URI编码解码功能",
+    "config.unicode.enabled": "启用Unicode编码解码功能",
+    "config.hex.enabled": "启用HEX编码解码功能",
+    "config.sort.enabled": "启用行排序功能",
+    "config.theDate.enabled": "启用输出今日日期功能"
 }

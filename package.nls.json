@@ -30,5 +30,16 @@
     "uri.label": "URI",
     "unicode.label": "Unicode",
     "hex.label": "HEX",
-    "sort.label": "Sort lines"
+    "sort.label": "Sort lines",
+    "config.checkTaskList.enabled": "Enable TODO",
+    "config.reverseString.enabled": "Enable Reverse String",
+    "config.case.enabled": "Enable Case conversion",
+    "config.list.enabled": "Enable List generate",
+    "config.base64.enabled": "Enable Base64 encode/decode",
+    "config.aes.enabled": "Enable AES encrypt/decrypt",
+    "config.uri.enabled": "Enable URI encode/decode",
+    "config.unicode.enabled": "Enable Unicode encode/decode",
+    "config.hex.enabled": "Enable HEX encode/decode",
+    "config.sort.enabled": "Enable Sort lines",
+    "config.theDate.enabled": "Enable print The Date"
 }

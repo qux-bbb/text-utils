@@ -114,48 +114,57 @@
             "editor/context": [
                 {
                     "command": "text-utils.extension.checkTaskList",
-                    "when": "editorTextFocus",
+                    "when": "editorTextFocus && config.text-utils.checkTaskList.enabled",
                     "group": "text-utils@1"
                 },
                 {
                     "command": "text-utils.extension.reverseString",
-                    "when": "editorHasSelection",
+                    "when": "editorHasSelection && config.text-utils.reverseString.enabled",
                     "group": "text-utils@2"
                 },
                 {
                     "submenu": "text-utils/case",
+                    "when": "config.text-utils.case.enabled",
                     "group": "text-utils@3"
                 },
                 {
                     "submenu": "text-utils/list",
+                    "when": "config.text-utils.list.enabled",
                     "group": "text-utils@4"
                 },
                 {
                     "submenu": "text-utils/base64",
+                    "when": "config.text-utils.base64.enabled",
                     "group": "text-utils@5"
                 },
                 {
                     "submenu": "text-utils/aes",
+                    "when": "config.text-utils.aes.enabled",
                     "group": "text-utils@6"
                 },
                 {
                     "submenu": "text-utils/uri",
+                    "when": "config.text-utils.uri.enabled",
                     "group": "text-utils@7"
                 },
                 {
                     "submenu": "text-utils/unicode",
+                    "when": "config.text-utils.unicode.enabled",
                     "group": "text-utils@8"
                 },
                 {
                     "submenu": "text-utils/hex",
+                    "when": "config.text-utils.hex.enabled",
                     "group": "text-utils@9"
                 },
                 {
                     "submenu": "text-utils/sort",
+                    "when": "config.text-utils.sort.enabled",
                     "group": "text-utils@10"
                 },
                 {
                     "command": "text-utils.extension.theDate",
+                    "when": "config.text-utils.theDate.enabled",
                     "group": "text-utils@11"
                 }
             ],
@@ -309,7 +318,67 @@
                 "key": "alt+x",
                 "when": "editorTextFocus"
             }
-        ]
+        ],
+        "configuration":{
+            "title": "Text Utils",
+            "properties": {
+                "text-utils.checkTaskList.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.checkTaskList.enabled%"
+                },
+                "text-utils.reverseString.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.reverseString.enabled%"
+                },
+                "text-utils.case.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.case.enabled%"
+                },
+                "text-utils.list.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.list.enabled%"
+                },
+                "text-utils.base64.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.base64.enabled%"
+                },
+                "text-utils.aes.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.aes.enabled%"
+                },
+                "text-utils.uri.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.uri.enabled%"
+                },
+                "text-utils.unicode.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.unicode.enabled%"
+                },
+                "text-utils.hex.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.hex.enabled%"
+                },
+                "text-utils.sort.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.sort.enabled%"
+                },
+                "text-utils.theDate.enabled": {
+                    "type":"boolean",
+                    "default": true,
+                    "description": "%config.theDate.enabled%"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
