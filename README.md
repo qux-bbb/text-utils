@@ -1,7 +1,6 @@
 # text-utils
 
 ## Intro
-
 Text formatting tool, right-click to select the function, the existing functions are as follows：  
 1. TODO list (shortcut key: Alt + X)
 2. string reverse
@@ -12,9 +11,13 @@ Text formatting tool, right-click to select the function, the existing functions
 7. uri encode/decode
 8. unicode encode/decode
 9. hex encode/decode
-10. print today date
+10. sort lines
+11. print today date
 
-## example
+You can search for `Text Utils` in settings and choose whether to turn on some functions  
+
+
+## Example
 ```
 # TODO
 - [ ] hello world
@@ -47,6 +50,12 @@ https://baike.baidu.com/item/你好/32416 <-> https://baike.baidu.com/item/%E4%B
 # hex
 hello <-> 68656c6c6f
 
+# sort lines
+hello       good
+world   --> hello
+good        morning
+morning     world
+
 # date
 2021/6/12
 ```
@@ -64,6 +73,7 @@ hello <-> 68656c6c6f
    vsce package
    ```
    the vsix package will be generated. In the upper right corner of the vscode extension window, select "install from VSIX", find the generated vsix package and install.  
+
 
 ## Reference
 1. https://github.com/yzhang-gh/vscode-markdown  

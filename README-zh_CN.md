@@ -1,7 +1,6 @@
 # text-utils
 
 ## 简介
-
 文本格式化工具，右键选择功能，现有如下功能：  
 1. TODO列表（快捷键：Alt + X）
 2. 字符串逆序
@@ -12,7 +11,11 @@
 7. uri编码解码
 8. unicode编码解码
 9. hex编码解码
-10. 输出今日日期
+10. 行排序
+11. 输出今日日期
+
+你可以在设置里搜索 `Text Utils`，选择是否开启某些功能  
+
 
 ## 示例
 ```
@@ -47,9 +50,16 @@ https://baike.baidu.com/item/你好/32416 <-> https://baike.baidu.com/item/%E4%B
 # hex
 hello <-> 68656c6c6f
 
+# sort lines
+hello       good
+world   --> hello
+good        morning
+morning     world
+
 # date
 2021/6/12
 ```
+
 
 ## 安装方式
 1. 直接从vscode扩展窗口搜索'text-utils'安装  
@@ -63,6 +73,7 @@ hello <-> 68656c6c6f
    vsce package
    ```
    这样可以生成vsix包，在扩展窗口的右上角菜单选择"从 VSIX 安装"，选择生成的vsix包安装即可  
+
 
 ## 参考链接
 1. https://github.com/yzhang-gh/vscode-markdown  
