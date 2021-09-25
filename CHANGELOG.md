@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.1.2
+- change base64 decode multiline
+- add sort lines func
+- add config of enable or disable a func
+
 ## 0.1.1
 - fix list and reverseString bug
 
