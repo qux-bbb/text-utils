@@ -1,7 +1,7 @@
 # text-utils
 
 ## Intro
-Text formatting tool, right-click to select the function, the existing functions are as follows：  
+Text formatting tool, right-click to select the function, the current functions are as follows：  
 1. TODO list (shortcut key: Alt + X)
 2. string reverse
 3. string to lowercase/uppercase/titlecase
@@ -14,7 +14,7 @@ Text formatting tool, right-click to select the function, the existing functions
 10. sort lines
 11. print today date
 
-You can search for `Text Utils` in settings and choose whether to turn on some functions  
+You can search for `Text Utils` in settings and choose whether to enable some functions  
 
 
 ## Example
@@ -62,8 +62,8 @@ morning     world
 
 
 ## How to install
-1. Search for 'text utils' from vscode extension window and install directly  
-2. Build by yourself  
+- Search for 'text utils' from vscode extension window and install directly  
+- Build by yourself  
    After installing node.js, execute the following commands：
    ```sh
    git clone https://github.com/qux-bbb/text-utils
