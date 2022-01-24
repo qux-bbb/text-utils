@@ -22,6 +22,8 @@
     "hexDecode.title": "解码",
     "sortLinesByAlpha.title": "按字母顺序",
     "sortLinesByReverseAlpha.title": "按字母逆序",
+    "sortLinesByNum.title": "按数字顺序",
+    "sortLinesByReverseNum.title": "按数字逆序",
     "theDate.title": "今日日期",
     "case.label": "大小写",
     "list.label": "列表",

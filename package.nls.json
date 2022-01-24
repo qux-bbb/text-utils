@@ -22,6 +22,8 @@
     "hexDecode.title": "Decode",
     "sortLinesByAlpha.title": "By Alpha",
     "sortLinesByReverseAlpha.title": "By Reverse Alpha",
+    "sortLinesByNum.title": "By Num",
+    "sortLinesByReverseNum.title": "By Reverse Num",
     "theDate.title": "The Date",
     "case.label": "Case",
     "list.label": "List",
