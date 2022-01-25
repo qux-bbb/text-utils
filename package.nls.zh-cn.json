@@ -24,6 +24,8 @@
     "sortLinesByReverseAlpha.title": "按字母逆序",
     "sortLinesByNum.title": "按数字顺序",
     "sortLinesByReverseNum.title": "按数字逆序",
+    "deduplicateByLine.title": "行去重",
+    "deduplicateByChar.title": "字符去重",
     "theDate.title": "今日日期",
     "case.label": "大小写",
     "list.label": "列表",
@@ -33,6 +35,7 @@
     "unicode.label": "Unicode",
     "hex.label": "HEX",
     "sort.label": "行排序",
+    "deduplicate.label": "去重",
     "config.checkTaskList.enabled": "启用TODO功能",
     "config.reverseString.enabled": "启用字符串逆序功能",
     "config.case.enabled": "启用大小写转换功能",
@@ -43,5 +46,6 @@
     "config.unicode.enabled": "启用Unicode编码解码功能",
     "config.hex.enabled": "启用HEX编码解码功能",
     "config.sort.enabled": "启用行排序功能",
+    "config.deduplicate.enabled": "启用去重功能",
     "config.theDate.enabled": "启用输出今日日期功能"
 }
