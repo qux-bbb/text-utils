@@ -12,13 +12,14 @@
 8. unicode编码解码
 9. hex编码解码
 10. 行排序
-11. 输出今日日期
+11. 去重
+12. 输出今日日期
 
 你可以在设置里搜索 `Text Utils`，选择是否开启某些功能  
 
 
 ## 示例
-```
+```r
 # TODO
 - [ ] hello world
 - [x] good morning
@@ -55,6 +56,12 @@ hello       good
 world   --> hello
 good        morning
 morning     world
+
+# deduplicate lines
+world     word
+hello --> hello
+world
+hello
 
 # date
 2021/6/12

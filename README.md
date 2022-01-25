@@ -12,13 +12,14 @@ Text formatting tool, right-click to select the function, the current functions 
 8. unicode encode/decode
 9. hex encode/decode
 10. sort lines
-11. print today date
+11. deduplicate
+12. print today date
 
 You can search for `Text Utils` in settings and choose whether to enable some functions  
 
 
 ## Example
-```
+```r
 # TODO
 - [ ] hello world
 - [x] good morning
@@ -55,6 +56,12 @@ hello       good
 world   --> hello
 good        morning
 morning     world
+
+# deduplicate lines
+world     word
+hello --> hello
+world
+hello
 
 # date
 2021/6/12
