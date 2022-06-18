@@ -1,6 +1,6 @@
 {
     "ext.displayName": "Text Utils",
-    "ext.description": "Simple Text Utils",
+    "ext.description": "Simple Text Utils. TODO, String Reverse/Lowercase/Uppercase/Titlecase, List generate, Base64, AES, URI, Unicode, Hex, Sort lines, Deduplicate...",
     "checkTaskList.title": "Check TODO",
     "reverseString.title": "Reverse String",
     "transformToLowercase.title": "To Lowercase",

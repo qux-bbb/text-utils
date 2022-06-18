@@ -1,6 +1,6 @@
 {
     "ext.displayName": "文本格式化工具",
-    "ext.description": "简单的文本格式化工具",
+    "ext.description": "简单的文本格式化工具。待办(TODO)，字符串逆序/小写/大写/词首大写，列表生成，Base64，AES，URI，Unicode，十六进制字符串(Hex)，行排序，去重...",
     "checkTaskList.title": "切换 TODO",
     "reverseString.title": "字符串逆序",
     "transformToLowercase.title": "小写",
