@@ -1,5 +1,7 @@
 # text-utils
 
+[English](README.md)  
+
 ## 简介
 文本格式化工具，右键选择功能，现有如下功能：  
 1. TODO列表（快捷键：Alt + X）
