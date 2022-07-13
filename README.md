@@ -2,7 +2,7 @@
 
 [简体中文](README-zh_CN.md)  
 
-## Intro
+## Introduce
 Text formatting tool, right-click to select the function, the current functions are as follows：  
 1. TODO list (shortcut key: Alt + X)
 2. string reverse
