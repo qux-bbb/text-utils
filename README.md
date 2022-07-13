@@ -92,3 +92,4 @@ hello
 5. https://nodejs.org/api/crypto.html  
 6. https://attacomsian.com/blog/nodejs-encrypt-decrypt-data  
 7. https://github.com/adamhartford/vscode-base64  
+8. Multiple selection editing: https://github.com/microsoft/vscode/issues/5886  
