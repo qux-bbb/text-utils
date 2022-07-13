@@ -307,12 +307,10 @@
             "text-utils/deduplicate":[
                 {
                     "command": "text-utils.extension.deduplicateByLine",
-                    "when": "editorHasSelection",
                     "group": "text-utils@11@1"
                 },
                 {
                     "command": "text-utils.extension.deduplicateByChar",
-                    "when": "editorHasSelection",
                     "group": "text-utils@11@2"
                 }
             ]

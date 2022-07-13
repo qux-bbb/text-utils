@@ -1,7 +1,7 @@
-import { getSelectionString, setSelectionString } from './utils';
+import { getTheString, setTheString } from './utils';
 
 export function deduplicateByLine () {
-	let theString = getSelectionString();
+	let [theString, selectFlag] = getTheString();
 	if (!theString)
 		{return;}
 	let theLines = [];
@@ -18,11 +18,11 @@ export function deduplicateByLine () {
 		}
 	}
 
-    setSelectionString(newLines.join('\n'));
+    setTheString(newLines.join('\n'), selectFlag);
 }
 
 export function deduplicateByChar () {
-	let theString = getSelectionString();
+	let [theString, selectFlag] = getTheString();
 	if (!theString)
 		{return;}
 	let newString = "";
@@ -32,5 +32,5 @@ export function deduplicateByChar () {
 		}
 	}
 
-    setSelectionString(newString);
+    setTheString(newString, selectFlag);
 }
