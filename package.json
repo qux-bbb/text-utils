@@ -289,22 +289,18 @@
             "text-utils/sort":[
                 {
                     "command": "text-utils.extension.sortLinesByAlpha",
-                    "when": "editorHasSelection",
                     "group": "text-utils@10@1"
                 },
                 {
                     "command": "text-utils.extension.sortLinesByReverseAlpha",
-                    "when": "editorHasSelection",
                     "group": "text-utils@10@2"
                 },
                 {
                     "command": "text-utils.extension.sortLinesByNum",
-                    "when": "editorHasSelection",
                     "group": "text-utils@10@3"
                 },
                 {
                     "command": "text-utils.extension.sortLinesByReverseNum",
-                    "when": "editorHasSelection",
                     "group": "text-utils@10@4"
                 }
             ],

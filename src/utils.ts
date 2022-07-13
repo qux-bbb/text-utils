@@ -62,3 +62,23 @@ export function setFileString (theString: string) {
 		editBuilder.replace(selection, theString);
 	});
 }
+
+
+export function getTheString(): [string, boolean]{
+	let selectFlag = true;
+	let theString = getSelectionString();
+	if (theString)
+		return [theString, selectFlag];
+	theString = getFileString();
+	if (theString)
+		return [theString, !selectFlag];
+	return ["", !selectFlag];
+}
+
+
+export function setTheString(theString:string, selectFlag:boolean) {
+	if (selectFlag)
+		setSelectionString(theString);
+	else
+		setFileString(theString);
+}
