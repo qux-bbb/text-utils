@@ -3,7 +3,7 @@ import { base64Encode, base64Decode } from './base64';
 import { checkTaskList } from './checkTaskList';
 import { transformToUnorderedList, transformToOrderedList } from './list';
 import { reverseString, transformToLowercase, transformToTitleCase, transformToUppercase } from './string';
-import { aesEncryptStr, aesDecryptStr, aesEncryptFile, aesDecryptFile } from './aes';
+import { aesEncrypt, aesDecrypt } from './aes';
 import { uriEncode, uriDecode } from './uri';
 import { unicodeEncode, unicodeDecode } from './unicode';
 import { hexEncode, hexDecode } from './hex';
@@ -22,10 +22,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.transformToOrderedList', transformToOrderedList),
 		commands.registerCommand('text-utils.extension.base64Encode', base64Encode),
 		commands.registerCommand('text-utils.extension.base64Decode', base64Decode),
-		commands.registerCommand('text-utils.extension.aesEncryptStr', aesEncryptStr),
-		commands.registerCommand('text-utils.extension.aesDecryptStr', aesDecryptStr),
-		commands.registerCommand('text-utils.extension.aesEncryptFile', aesEncryptFile),
-		commands.registerCommand('text-utils.extension.aesDecryptFile', aesDecryptFile),
+		commands.registerCommand('text-utils.extension.aesEncrypt', aesEncrypt),
+		commands.registerCommand('text-utils.extension.aesDecrypt', aesDecrypt),
 		commands.registerCommand('text-utils.extension.uriEncode', uriEncode),
 		commands.registerCommand('text-utils.extension.uriDecode', uriDecode),
 		commands.registerCommand('text-utils.extension.unicodeEncode', unicodeEncode),

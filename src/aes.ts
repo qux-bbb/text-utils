@@ -5,7 +5,7 @@ https://attacomsian.com/blog/nodejs-encrypt-decrypt-data
 */
 const { randomBytes, scryptSync, createCipheriv, createDecipheriv } = require('crypto');
 import { window } from 'vscode';
-import { getSelectionString, setSelectionString, getFileString, setFileString } from './utils';
+import { getTheString, setTheString } from './utils';
 
 
 const algorithm = 'aes-256-cbc';
@@ -76,53 +76,27 @@ async function getConfirmedPassword () {
 }
 
 
-export async function aesEncryptStr() {
-    let theString = getSelectionString();
-    if (!theString)
-        return;
+export async function aesEncrypt() {
+	let [theString, selectFlag] = getTheString();
+	if (!theString)
+		{return;}
     let password = await getConfirmedPassword();
     if (!password)
         return;
     const resultString = encrypt(theString, password);
 
-    setSelectionString(resultString);
+	setTheString(resultString, selectFlag);
 }
 
 
-export async function aesDecryptStr() {
-    let theString = getSelectionString();
-    if (!theString)
-        return;
+export async function aesDecrypt() {
+	let [theString, selectFlag] = getTheString();
+	if (!theString)
+		{return;}
     let password = await getPassword();
     if (!password)
         return;
     const resultString = decrypt(theString, password);
 
-    setSelectionString(resultString);
-}
-
-
-export async function aesEncryptFile() {
-    let theString = getFileString();
-    if (!theString)
-        return;
-    let password = await getConfirmedPassword();
-    if (!password)
-        return;
-    const resultString = encrypt(theString, password);
-
-    setFileString(resultString);
-}
-
-
-export async function aesDecryptFile() {
-    let theString = getFileString();
-    if (!theString)
-        return;
-    let password = await getPassword();
-    if (!password)
-        return;
-    const resultString = decrypt(theString, password);
-
-    setFileString(resultString);
+    setTheString(resultString, selectFlag);
 }

@@ -58,20 +58,12 @@
                 "title": "%base64Decode.title%"
             },
             {
-                "command": "text-utils.extension.aesEncryptStr",
-                "title": "%aesEncryptStr.title%"
+                "command": "text-utils.extension.aesEncrypt",
+                "title": "%aesEncrypt.title%"
             },
             {
-                "command": "text-utils.extension.aesDecryptStr",
-                "title": "%aesDecryptStr.title%"
-            },
-            {
-                "command": "text-utils.extension.aesEncryptFile",
-                "title": "%aesEncryptFile.title%"
-            },
-            {
-                "command": "text-utils.extension.aesDecryptFile",
-                "title": "%aesDecryptFile.title%"
+                "command": "text-utils.extension.aesDecrypt",
+                "title": "%aesDecrypt.title%"
             },
             {
                 "command": "text-utils.extension.uriEncode",
@@ -232,22 +224,12 @@
             ],
             "text-utils/aes":[
                 {
-                    "command": "text-utils.extension.aesEncryptStr",
-                    "when": "editorHasSelection",
+                    "command": "text-utils.extension.aesEncrypt",
                     "group": "text-utils@6@1"
                 },
                 {
-                    "command": "text-utils.extension.aesDecryptStr",
-                    "when": "editorHasSelection",
+                    "command": "text-utils.extension.aesDecrypt",
                     "group": "text-utils@6@2"
-                },
-                {
-                    "command": "text-utils.extension.aesEncryptFile",
-                    "group": "text-utils@6@3"
-                },
-                {
-                    "command": "text-utils.extension.aesDecryptFile",
-                    "group": "text-utils@6@4"
                 }
             ],
             "text-utils/uri":[
