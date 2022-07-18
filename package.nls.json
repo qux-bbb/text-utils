@@ -45,5 +45,6 @@
     "config.hex.enabled": "Enable HEX encode/decode",
     "config.sort.enabled": "Enable Sort lines",
     "config.deduplicate.enabled": "Enable Deduplicate",
-    "config.theDate.enabled": "Enable print The Date"
+    "config.theDate.enabled": "Enable print The Date",
+    "config.theDate.format": "The format of today date"
 }

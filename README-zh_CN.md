@@ -93,3 +93,4 @@ hello
 6. https://attacomsian.com/blog/nodejs-encrypt-decrypt-data  
 7. https://github.com/adamhartford/vscode-base64  
 8. 多选区编辑: https://github.com/microsoft/vscode/issues/5886  
+9. 配置文件示例: https://github.dev/microsoft/vscode-extension-samples/tree/main/configuration-sample  

@@ -404,6 +404,18 @@
                     "type":"boolean",
                     "default": true,
                     "description": "%config.theDate.enabled%"
+                },
+                "text-utils.theDate.format": {
+                    "type": "string",
+                    "enum": [
+                        "yyyy/m/d:1970/1/2",
+                        "yyyy-m-d:1970-1-2",
+                        "yyyy/mm/dd:1970/01/02",
+                        "yyyy-mm-dd:1970-01-02",
+                        "yyyymmdd:19700102"
+                    ],
+                    "default": "yyyy/m/d:1970/1/2",
+                    "description": "%config.theDate.format%"
                 }
             }
         }
