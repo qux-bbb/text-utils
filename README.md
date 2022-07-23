@@ -17,7 +17,7 @@ Text formatting tool, right-click to select the function, the current functions 
 11. deduplicate
 12. print today date
 
-You can search for `Text Utils` in settings and choose whether to enable some functions  
+You can search for `Text Utils` in settings, choose whether to enable some functions, change date format  
 
 
 ## Example

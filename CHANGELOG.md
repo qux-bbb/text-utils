@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.4
+- optimize multiple selection and no selection
+- add optional date format
+
 ## 0.1.3
 - add sort lines by num func
 - add dedupulicate func
