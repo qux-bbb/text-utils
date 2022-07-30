@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.1.5
+- fix Date month error
+
 ## 0.1.4
 - optimize multiple selection and no selection
 - add optional date format
