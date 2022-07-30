@@ -12,7 +12,7 @@ export function theDate() {
 
 	const myDate = new Date();
 	const year = myDate.getFullYear();
-	const month = myDate.getMonth();
+	const month = myDate.getMonth() + 1;
 	const dayOfMonth = myDate.getDate();
 
 	let resultString = formatStr.split(':')[0];
