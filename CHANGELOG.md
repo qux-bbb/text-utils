@@ -1,6 +1,9 @@
 # Change Log
 
 ## 0.1.5
+- support "U" for unicodeDecode
+
+## 0.1.5
 - fix Date month error
 
 ## 0.1.4
