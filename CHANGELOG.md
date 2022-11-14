@@ -2,6 +2,8 @@
 
 ## 0.1.5
 - support "U" for unicodeDecode
+- update dependency
+- adjust activationEvents
 
 ## 0.1.5
 - fix Date month error
