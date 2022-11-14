@@ -181,7 +181,7 @@
                     "group": "text-utils@12"
                 }
             ],
-            "text-utils/case":[
+            "text-utils/case": [
                 {
                     "command": "text-utils.extension.transformToLowercase",
                     "when": "editorHasSelection",
@@ -198,7 +198,7 @@
                     "group": "text-utils@3@3"
                 }
             ],
-            "text-utils/list":[
+            "text-utils/list": [
                 {
                     "command": "text-utils.extension.transformToUnorderedList",
                     "when": "editorHasSelection",
@@ -210,7 +210,7 @@
                     "group": "text-utils@4@2"
                 }
             ],
-            "text-utils/base64":[
+            "text-utils/base64": [
                 {
                     "command": "text-utils.extension.base64Encode",
                     "when": "editorHasSelection",
@@ -222,7 +222,7 @@
                     "group": "text-utils@5@2"
                 }
             ],
-            "text-utils/aes":[
+            "text-utils/aes": [
                 {
                     "command": "text-utils.extension.aesEncrypt",
                     "group": "text-utils@6@1"
@@ -232,7 +232,7 @@
                     "group": "text-utils@6@2"
                 }
             ],
-            "text-utils/uri":[
+            "text-utils/uri": [
                 {
                     "command": "text-utils.extension.uriEncode",
                     "when": "editorHasSelection",
@@ -244,7 +244,7 @@
                     "group": "text-utils@7@2"
                 }
             ],
-            "text-utils/unicode":[
+            "text-utils/unicode": [
                 {
                     "command": "text-utils.extension.unicodeEncode",
                     "when": "editorHasSelection",
@@ -256,7 +256,7 @@
                     "group": "text-utils@8@2"
                 }
             ],
-            "text-utils/hex":[
+            "text-utils/hex": [
                 {
                     "command": "text-utils.extension.hexEncode",
                     "when": "editorHasSelection",
@@ -268,7 +268,7 @@
                     "group": "text-utils@9@2"
                 }
             ],
-            "text-utils/sort":[
+            "text-utils/sort": [
                 {
                     "command": "text-utils.extension.sortLinesByAlpha",
                     "group": "text-utils@10@1"
@@ -286,7 +286,7 @@
                     "group": "text-utils@10@4"
                 }
             ],
-            "text-utils/deduplicate":[
+            "text-utils/deduplicate": [
                 {
                     "command": "text-utils.extension.deduplicateByLine",
                     "group": "text-utils@11@1"
@@ -342,66 +342,66 @@
                 "when": "editorTextFocus"
             }
         ],
-        "configuration":{
+        "configuration": {
             "title": "Text Utils",
             "properties": {
                 "text-utils.checkTaskList.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.checkTaskList.enabled%"
                 },
                 "text-utils.reverseString.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.reverseString.enabled%"
                 },
                 "text-utils.case.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.case.enabled%"
                 },
                 "text-utils.list.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.list.enabled%"
                 },
                 "text-utils.base64.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.base64.enabled%"
                 },
                 "text-utils.aes.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.aes.enabled%"
                 },
                 "text-utils.uri.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.uri.enabled%"
                 },
                 "text-utils.unicode.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.unicode.enabled%"
                 },
                 "text-utils.hex.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.hex.enabled%"
                 },
                 "text-utils.sort.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.sort.enabled%"
                 },
                 "text-utils.deduplicate.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.deduplicate.enabled%"
                 },
                 "text-utils.theDate.enabled": {
-                    "type":"boolean",
+                    "type": "boolean",
                     "default": true,
                     "description": "%config.theDate.enabled%"
                 },
@@ -437,7 +437,7 @@
         "@typescript-eslint/parser": "^4.1.1",
         "eslint": "^7.9.0",
         "glob": "^7.1.6",
-        "mocha": "^8.1.3",
+        "mocha": "^10.1.0",
         "typescript": "^4.0.2",
         "vscode-test": "^1.4.0"
     }
