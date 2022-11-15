@@ -84,6 +84,20 @@ hello
    这样可以生成vsix包，在扩展窗口的右上角菜单选择"从 VSIX 安装"，选择生成的vsix包安装即可  
 
 
+## 发布
+该步骤仅本人使用  
+
+在手动构建生成vsix包之后，需要发布到 github release 页面、vscode扩展市场、open-vsx。  
+- github release  
+   打开 https://github.com/qux-bbb/text-utils/releases, `Draft a new release`  
+   创建新的版本tag，写release标题和内容(可以根据changelog写)，上传vsix文件即可  
+- vscode扩展市场  
+   打开 https://marketplace.visualstudio.com/manage/publishers  
+   点击旧版本一行的 "..."->"Update", 上传vsix文件即可  
+- open-vsx  
+   执行命令即可: `npx ovsx publish -p <token>`, token换成自己的  
+
+
 ## 参考链接
 1. https://github.com/yzhang-gh/vscode-markdown  
 2. https://github.com/microsoft/vscode-extension-samples/blob/master/document-editing-sample  
