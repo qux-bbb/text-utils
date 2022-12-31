@@ -42,7 +42,7 @@ hello world -> Hello World
 hello <-> aGVsbG8=
 
 # AES password: world
-hello <-> f3ece8ca48592a397724c026a1d64067:b82580400b5a2c5c12cd9abbfcdd4ef0
+hello <-> fa40d8662cfbd6d8ed5348561b81f2a5c7c67be5a6278c31f915759015ee62b7baac7118bd92aa496a1f64681e6c0da9
 
 # uri
 https://baike.baidu.com/item/你好/32416 <-> https://baike.baidu.com/item/%E4%BD%A0%E5%A5%BD/32416

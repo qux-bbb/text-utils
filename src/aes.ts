@@ -12,20 +12,21 @@ const algorithm = 'aes-256-cbc';
 
 function encrypt (text:string, password:string) {
     const iv = randomBytes(16);
-    const secretKey = scryptSync(password, 'salt', 32);
+    const salt = randomBytes(16);
+    const secretKey = scryptSync(password, salt, 32);
 
     const cipher = createCipheriv(algorithm, secretKey, iv);
     const encrypted = Buffer.concat([cipher.update(text), cipher.final()]);
 
-    return [iv.toString('hex'), encrypted.toString('hex')].join(':');
+    return [iv.toString('hex'), salt.toString('hex'), encrypted.toString('hex')].join('');
 };
 
 
 function decrypt (hex_str:string, password:string) {
-    const [ivHex, encryptedHex] = hex_str.split(':')
-    const iv = Buffer.from(ivHex, 'hex');
-    const encrypted = Buffer.from(encryptedHex, 'hex');
-    const secretKey = scryptSync(password, 'salt', 32);
+    const iv = Buffer.from(hex_str.substring(0, 32), 'hex');
+    const salt = Buffer.from(hex_str.substring(32, 64), 'hex');
+    const encrypted = Buffer.from(hex_str.substring(64), 'hex');
+    const secretKey = scryptSync(password, salt, 32);
 
     const decipher = createDecipheriv(algorithm, secretKey, iv);
     const decrpyted = Buffer.concat([decipher.update(encrypted), decipher.final()]);
