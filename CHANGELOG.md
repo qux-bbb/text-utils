@@ -1,6 +1,12 @@
 # Change Log
 
 ## 0.1.6
+- fix sort newline symbol
+- adjust aes, random salt and remove ":"
+
+**Attention: Aes is not compatible with previous. If you use the old version to encrypt, you must use the old version to decrypt correctly.**  
+
+## 0.1.6
 - support "U" for unicodeDecode
 - update dependency
 - adjust activationEvents
