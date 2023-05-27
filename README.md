@@ -19,6 +19,7 @@ Text formatting tool, right-click to select the function, the current functions 
 
 You can search for `Text Utils` in settings, choose whether to enable some functions, change date format  
 
+Note: Only suitable for processing small amounts of data, large amounts of data may not be effective  
 
 ## Example
 ```r
