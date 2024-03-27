@@ -15,7 +15,8 @@ Text formatting tool, right-click to select the function, the current functions 
 9. hex encode/decode
 10. sort lines
 11. deduplicate
-12. print today date
+12. random password(space separated string required)
+13. print today date
 
 You can search for `Text Utils` in settings, choose whether to enable some functions, change date format  
 
@@ -65,6 +66,9 @@ world     word
 hello --> hello
 world
 hello
+
+# random password
+hello world -> h3llo*world
 
 # date
 2021/6/12

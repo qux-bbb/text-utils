@@ -15,7 +15,8 @@
 9. hex编码解码
 10. 行排序
 11. 去重
-12. 输出今日日期
+12. 随机密码(需要提供空格分隔字符串)
+13. 输出今日日期
 
 你可以在设置里搜索 `Text Utils`，选择是否启用某些功能，更改日期输出格式  
 
@@ -66,6 +67,9 @@ world     word
 hello --> hello
 world
 hello
+
+# random password
+hello world -> h3llo*world
 
 # date
 2021/6/12
