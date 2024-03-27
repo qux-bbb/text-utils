@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.0
+- change to semantic version
+- add randomPassword func
+
 ## 0.1.7
 - fix sort newline symbol
 - adjust aes, random salt and remove ":"
