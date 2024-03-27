@@ -1,18 +1,18 @@
 import { getSelectionString, setSelectionString } from './utils';
 
-export function base64Encode () {
+
+export function base64Encode() {
 	let theString = getSelectionString();
-	if (!theString)
-		{return;}
-    const resultString = Buffer.from(theString).toString('base64');
+	if (!theString) { return; }
+	const resultString = Buffer.from(theString).toString('base64');
 
 	setSelectionString(resultString);
 }
 
-export function base64Decode () {
+
+export function base64Decode() {
 	let theString = getSelectionString();
-	if (!theString)
-		{return;}
+	if (!theString) { return; }
 
 	let theLines = theString.split('\n');
 	for (let i = 0; i < theLines.length; i++) {

@@ -179,7 +179,6 @@
                     "when": "config.text-utils.deduplicate.enabled",
                     "group": "text-utils@11"
                 },
-                
                 {
                     "command": "text-utils.extension.randomPassword",
                     "when": "config.text-utils.randomPassword.enabled",

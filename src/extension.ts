@@ -12,8 +12,9 @@ import { deduplicateByLine, deduplicateByChar } from './deduplicate';
 import { randomPassword } from './randomPassword';
 import { theDate } from './date';
 
+
 export function activate(context: ExtensionContext) {
-    context.subscriptions.push(
+	context.subscriptions.push(
 		commands.registerCommand('text-utils.extension.checkTaskList', checkTaskList),
 		commands.registerCommand('text-utils.extension.reverseString', reverseString),
 		commands.registerCommand('text-utils.extension.transformToLowercase', transformToLowercase),
@@ -39,7 +40,8 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.deduplicateByChar', deduplicateByChar),
 		commands.registerCommand('text-utils.extension.randomPassword', randomPassword),
 		commands.registerCommand('text-utils.extension.theDate', theDate),
-    );
+	);
 }
 
-export function deactivate() {}
+
+export function deactivate() { }

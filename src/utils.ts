@@ -1,24 +1,22 @@
 import { window, Selection, Position } from 'vscode';
 
 
-export function getSelectionString () {
+export function getSelectionString() {
 	const editor = window.activeTextEditor;
 
-	if (!editor)
-		{return;}
+	if (!editor) { return; }
 
 	const document = editor.document;
 	const selection = editor.selection;
 
-    return document.getText(selection);
+	return document.getText(selection);
 }
 
 
-export function setSelectionString (theString: string) {
+export function setSelectionString(theString: string) {
 	const editor = window.activeTextEditor;
 
-	if (!editor)
-		{return;}
+	if (!editor) { return; }
 
 	const document = editor.document;
 	const selection = editor.selection;
@@ -29,34 +27,32 @@ export function setSelectionString (theString: string) {
 }
 
 
-export function getFileString () {
+export function getFileString() {
 	const editor = window.activeTextEditor;
 
-	if (!editor)
-		{return;}
+	if (!editor) { return; }
 
 	const document = editor.document;
 
-    return document.getText();
+	return document.getText();
 }
 
 
-export function setFileString (theString: string) {
+export function setFileString(theString: string) {
 	const editor = window.activeTextEditor;
 
-	if (!editor)
-		{return;}
+	if (!editor) { return; }
 
 	const document = editor.document;
 	let lastLine = document.lineCount - 1;
-	if(lastLine < 0) {
+	if (lastLine < 0) {
 		lastLine = 0;
 	}
 	var lastChar = document.lineAt(lastLine).text.length;
-	if(lastChar <= 0) {
+	if (lastChar <= 0) {
 		lastChar = 1;
 	}
-	let selection = new Selection(new Position(0,0), new Position(lastLine,lastChar));
+	let selection = new Selection(new Position(0, 0), new Position(lastLine, lastChar));
 
 	editor.edit(editBuilder => {
 		editBuilder.replace(selection, theString);
@@ -64,21 +60,17 @@ export function setFileString (theString: string) {
 }
 
 
-export function getTheString(): [string, boolean]{
+export function getTheString(): [string, boolean] {
 	let selectFlag = true;
 	let theString = getSelectionString();
-	if (theString)
-		return [theString, selectFlag];
+	if (theString) { return [theString, selectFlag]; }
 	theString = getFileString();
-	if (theString)
-		return [theString, !selectFlag];
+	if (theString) { return [theString, !selectFlag]; }
 	return ["", !selectFlag];
 }
 
 
-export function setTheString(theString:string, selectFlag:boolean) {
-	if (selectFlag)
-		setSelectionString(theString);
-	else
-		setFileString(theString);
+export function setTheString(theString: string, selectFlag: boolean) {
+	if (selectFlag) { setSelectionString(theString); }
+	else { setFileString(theString); }
 }

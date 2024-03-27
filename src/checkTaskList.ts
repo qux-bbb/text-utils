@@ -1,17 +1,18 @@
 import { Position, Range, window } from 'vscode';
 
+
 export function checkTaskList() {
-	// Refer to this link: https://github.com/yzhang-gh/vscode-markdown/blob/ff79b2e7a69dcbfd04d5c289999c1a09ef784e61/src/listEditing.ts#L409
+    // Refer to this link: https://github.com/yzhang-gh/vscode-markdown/blob/ff79b2e7a69dcbfd04d5c289999c1a09ef784e61/src/listEditing.ts#L409
     // If a todo line need to be toggle state, then toggle it: unchecked to checked, checked to unchecked.
     // If a common line need to change to a todo line, then change it as unchecked todo line.
     let editor = window.activeTextEditor;
-    if (!editor) {return;}
+    if (!editor) { return; }
 
     const uncheckedRegex = /^(\s*- \[) \]/;
     const checkedRegex = /^(\s*- \[)x\]/;
     const whiteSpaceRegex = /^(\s*)\S/;  // \S Ensure at least one non whitespace character.
 
-    let toBeToggled: {position:Position, state: string}[] = []; // All spots that have an "[x]" resp. "[ ]" which should be toggled.
+    let toBeToggled: { position: Position, state: string }[] = []; // All spots that have an "[x]" resp. "[ ]" which should be toggled.
     let needAddTodo: Position[] = [];
 
     // Go through all touched lines of all selections.
@@ -24,7 +25,7 @@ export function checkTaskList() {
                 continue;
             }
 
-            let matches: RegExpExecArray|null;
+            let matches: RegExpExecArray | null;
             if (matches = uncheckedRegex.exec(line.text)) {
                 toBeToggled.push({
                     position: lineStart.with({ character: matches[1].length }),
@@ -35,7 +36,7 @@ export function checkTaskList() {
                     position: lineStart.with({ character: matches[1].length }),
                     state: ' '
                 });
-            } else if (matches = whiteSpaceRegex.exec(line.text)){  // Match the beginning of a non whitespace character. There must be a match.
+            } else if (matches = whiteSpaceRegex.exec(line.text)) {  // Match the beginning of a non whitespace character. There must be a match.
                 needAddTodo.push(lineStart.with({ character: matches[1].length }));
             }
         }
@@ -50,7 +51,7 @@ export function checkTaskList() {
             }
 
             for (const pos of needAddTodo) {  // It's not clear why the later position hasn't changed, but it works.
-                editBuilder.insert(pos, '- [ ] ')
+                editBuilder.insert(pos, '- [ ] ');
             }
         });
     };

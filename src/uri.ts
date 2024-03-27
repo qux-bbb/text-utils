@@ -1,19 +1,19 @@
 import { getSelectionString, setSelectionString } from './utils';
 
-export function uriEncode () {
-	let theString = getSelectionString();
-	if (!theString)
-		{return;}
 
-    const resultString = encodeURI(theString);
+export function uriEncode() {
+	let theString = getSelectionString();
+	if (!theString) { return; }
+
+	const resultString = encodeURI(theString);
 
 	setSelectionString(resultString);
 }
 
-export function uriDecode () {
+
+export function uriDecode() {
 	let theString = getSelectionString();
-	if (!theString)
-		{return;}
+	if (!theString) { return; }
 
 	/*
 	if you want to decode this:
