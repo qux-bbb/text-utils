@@ -24,6 +24,7 @@
     "sortLinesByReverseNum.title": "By Reverse Num",
     "deduplicateByLine.title": "Deduplicate By Line",
     "deduplicateByChar.title": "Deduplicate By Char",
+    "randomPassword.title": "Random Password",
     "theDate.title": "The Date",
     "case.label": "Case",
     "list.label": "List",
@@ -45,6 +46,7 @@
     "config.hex.enabled": "Enable HEX encode/decode",
     "config.sort.enabled": "Enable Sort lines",
     "config.deduplicate.enabled": "Enable Deduplicate",
+    "config.randomPassword.enabled": "Enable Random Password",
     "config.theDate.enabled": "Enable print The Date",
     "config.theDate.format": "The format of today date"
 }

@@ -24,6 +24,7 @@
     "sortLinesByReverseNum.title": "按数字逆序",
     "deduplicateByLine.title": "行去重",
     "deduplicateByChar.title": "字符去重",
+    "randomPassword.title": "随机密码",
     "theDate.title": "今日日期",
     "case.label": "大小写",
     "list.label": "列表",
@@ -45,6 +46,7 @@
     "config.hex.enabled": "启用HEX编码解码功能",
     "config.sort.enabled": "启用行排序功能",
     "config.deduplicate.enabled": "启用去重功能",
+    "config.randomPassword.enabled": "启用生成随机密码功能",
     "config.theDate.enabled": "启用输出今日日期功能",
     "config.theDate.format": "今日日期的输出格式"
 }

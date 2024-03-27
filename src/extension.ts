@@ -9,6 +9,7 @@ import { unicodeEncode, unicodeDecode } from './unicode';
 import { hexEncode, hexDecode } from './hex';
 import { sortLinesByAlpha, sortLinesByReverseAlpha, sortLinesByNum, sortLinesByReverseNum } from './sort';
 import { deduplicateByLine, deduplicateByChar } from './deduplicate';
+import { randomPassword } from './randomPassword';
 import { theDate } from './date';
 
 export function activate(context: ExtensionContext) {
@@ -36,6 +37,7 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.sortLinesByReverseNum', sortLinesByReverseNum),
 		commands.registerCommand('text-utils.extension.deduplicateByLine', deduplicateByLine),
 		commands.registerCommand('text-utils.extension.deduplicateByChar', deduplicateByChar),
+		commands.registerCommand('text-utils.extension.randomPassword', randomPassword),
 		commands.registerCommand('text-utils.extension.theDate', theDate),
     );
 }

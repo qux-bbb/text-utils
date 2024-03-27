@@ -114,6 +114,10 @@
                 "title": "%deduplicateByChar.title%"
             },
             {
+                "command": "text-utils.extension.randomPassword",
+                "title": "%randomPassword.title%"
+            },
+            {
                 "command": "text-utils.extension.theDate",
                 "title": "%theDate.title%"
             }
@@ -175,10 +179,16 @@
                     "when": "config.text-utils.deduplicate.enabled",
                     "group": "text-utils@11"
                 },
+                
+                {
+                    "command": "text-utils.extension.randomPassword",
+                    "when": "config.text-utils.randomPassword.enabled",
+                    "group": "text-utils@12"
+                },
                 {
                     "command": "text-utils.extension.theDate",
                     "when": "config.text-utils.theDate.enabled",
-                    "group": "text-utils@12"
+                    "group": "text-utils@13"
                 }
             ],
             "text-utils/case": [
@@ -399,6 +409,11 @@
                     "type": "boolean",
                     "default": true,
                     "description": "%config.deduplicate.enabled%"
+                },
+                "text-utils.randomPassword.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.randomPassword.enabled%"
                 },
                 "text-utils.theDate.enabled": {
                     "type": "boolean",
