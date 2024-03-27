@@ -20,7 +20,7 @@
 
 ## 0.1.3
 - add sort lines by num func
-- add dedupulicate func
+- add deduplicate func
 
 ## 0.1.2
 - change base64 decode multiline
