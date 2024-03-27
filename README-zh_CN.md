@@ -86,6 +86,45 @@ hello
    这样可以生成vsix包，在扩展窗口的右上角菜单选择"从 VSIX 安装"，选择生成的vsix包安装即可  
 
 
+## 开发
+准备环境：  
+```r
+git clone https://github.com/qux-bbb/text-utils
+cd text-utils
+npm install
+```
+
+在src下新建ts文件，写功能代码，参考示例：  
+[src/date.ts](src/date.ts)  
+[src/hex.ts](src/hex.ts)  
+
+在extension.ts里引用功能函数并添加命令  
+[src/extension.ts](src/extension.ts)  
+
+在package.json里添加命令名称、菜单项、子菜单项，如果有配置可以在"configuration"字段下添加  
+[package.json](package.json)  
+
+在nls(National Language Support)文件里添加相应的语言，当前支持英语、简体中文  
+[package.nls.json](package.nls.json)  
+[package.nls.zh-cn.json](package.nls.zh-cn.json)  
+
+开发完成后可以使用vscode进行调试  
+
+如果要发布新版本，一般需要修改4个文件：  
+package.json 修改版本  
+CHANGELOG.md 记录上个版本到这个版本的改动  
+README.md 相关描述  
+README-zh_CN.md 相关描述  
+
+生成vsix包  
+```r
+cd text-utils
+npm install
+npm install -g vsce
+vsce package
+```
+
+
 ## 发布
 该步骤仅本人使用  
 

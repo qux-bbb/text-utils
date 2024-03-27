@@ -85,6 +85,45 @@ hello
    the vsix package will be generated. In the upper right corner of the vscode extension window, select "install from VSIX", find the generated vsix package and install.  
 
 
+## How to develop
+Preparing the Environment:  
+```r
+git clone https://github.com/qux-bbb/text-utils
+cd text-utils
+npm install
+```
+
+Create a new .ts file under the src directory to write the functional code. For examples:  
+[src/date.ts](src/date.ts)  
+[src/hex.ts](src/hex.ts)  
+
+Import functions and add commands in extension.ts  
+[src/extension.ts](src/extension.ts)  
+
+Add command names, menu items, submenu items in package.json. If there are configurations, they can be added under the "configuration"  
+[package.json](package.json)  
+
+Add corresponding languages in the nls (National Language Support) files. Currently, English and Simplified Chinese are supported  
+[package.nls.json](package.nls.json)  
+[package.nls.zh-cn.json](package.nls.zh-cn.json)  
+
+After development is complete, you can use vscode for debugging  
+
+If you want to publish a new version, you generally need to modify the following 4 files:  
+`package.json` update the version  
+`CHANGELOG.md` write changes from the previous version to this version  
+`README.md` relevant descriptions  
+`README-zh_CN.md` relevant descriptions in Simplified Chinese  
+
+Build the vsix package  
+```r
+cd text-utils
+npm install
+npm install -g vsce
+vsce package
+```
+
+
 ## Reference
 1. https://github.com/yzhang-gh/vscode-markdown  
 2. https://github.com/microsoft/vscode-extension-samples/blob/master/document-editing-sample  
