@@ -26,6 +26,7 @@
     "deduplicateByChar.title": "Deduplicate By Char",
     "randomPassword.title": "Random Password",
     "theDate.title": "The Date",
+    "generateUUID.title": "Generate UUID",
     "case.label": "Case",
     "list.label": "List",
     "base64.label": "Base64",
@@ -48,5 +49,6 @@
     "config.deduplicate.enabled": "Enable Deduplicate",
     "config.randomPassword.enabled": "Enable Random Password",
     "config.theDate.enabled": "Enable print The Date",
-    "config.theDate.format": "The format of today date"
+    "config.theDate.format": "The format of today date",
+    "config.generateUUID.enabled": "Enable Generate UUID"
 }

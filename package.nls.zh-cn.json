@@ -26,6 +26,7 @@
     "deduplicateByChar.title": "字符去重",
     "randomPassword.title": "随机密码",
     "theDate.title": "今日日期",
+    "generateUUID.title": "生成UUID",
     "case.label": "大小写",
     "list.label": "列表",
     "base64.label": "Base64",
@@ -48,5 +49,6 @@
     "config.deduplicate.enabled": "启用去重功能",
     "config.randomPassword.enabled": "启用生成随机密码功能",
     "config.theDate.enabled": "启用输出今日日期功能",
-    "config.theDate.format": "今日日期的输出格式"
+    "config.theDate.format": "今日日期的输出格式",
+    "config.generateUUID.enabled": "启用生成UUID功能"
 }

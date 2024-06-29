@@ -120,6 +120,10 @@
             {
                 "command": "text-utils.extension.theDate",
                 "title": "%theDate.title%"
+            },
+            {
+                "command": "text-utils.extension.generateUUID",
+                "title": "%generateUUID.title%"
             }
         ],
         "menus": {
@@ -188,6 +192,11 @@
                     "command": "text-utils.extension.theDate",
                     "when": "config.text-utils.theDate.enabled",
                     "group": "text-utils@13"
+                },
+                {
+                    "command": "text-utils.extension.generateUUID",
+                    "when": "config.text-utils.generateUUID.enabled",
+                    "group": "text-utils@14"
                 }
             ],
             "text-utils/case": [
@@ -430,6 +439,11 @@
                     ],
                     "default": "yyyy/m/d:1970/1/2",
                     "description": "%config.theDate.format%"
+                },
+                "text-utils.generateUUID.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.generateUUID.enabled%"
                 }
             }
         }
@@ -446,6 +460,7 @@
         "@types/glob": "^7.1.3",
         "@types/mocha": "^8.0.0",
         "@types/node": "^12.11.7",
+        "@types/uuid": "^10.0.0",
         "@types/vscode": "^1.51.0",
         "@typescript-eslint/eslint-plugin": "^4.1.1",
         "@typescript-eslint/parser": "^4.1.1",
@@ -454,5 +469,8 @@
         "mocha": "^10.1.0",
         "typescript": "^4.0.2",
         "vscode-test": "^1.4.0"
+    },
+    "dependencies": {
+        "uuid": "^10.0.0"
     }
 }

@@ -11,6 +11,7 @@ import { sortLinesByAlpha, sortLinesByReverseAlpha, sortLinesByNum, sortLinesByR
 import { deduplicateByLine, deduplicateByChar } from './deduplicate';
 import { randomPassword } from './randomPassword';
 import { theDate } from './date';
+import { generateUUID } from './uuid';
 
 
 export function activate(context: ExtensionContext) {
@@ -40,6 +41,7 @@ export function activate(context: ExtensionContext) {
 		commands.registerCommand('text-utils.extension.deduplicateByChar', deduplicateByChar),
 		commands.registerCommand('text-utils.extension.randomPassword', randomPassword),
 		commands.registerCommand('text-utils.extension.theDate', theDate),
+		commands.registerCommand('text-utils.extension.generateUUID', generateUUID),
 	);
 }
 
