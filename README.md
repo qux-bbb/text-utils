@@ -17,6 +17,7 @@ Text formatting tool, right-click to select the function, the current functions 
 11. deduplicate
 12. random password(space separated string required)
 13. print today date
+14. generate UUID(v4)
 
 You can search for `Text Utils` in settings, choose whether to enable some functions, change date format  
 
@@ -72,6 +73,9 @@ hello world -> h3llo*world
 
 # date
 2021/6/12
+
+# UUID
+2e58dfd9-13eb-4f81-b684-01a3fb5e24e5
 ```
 
 
