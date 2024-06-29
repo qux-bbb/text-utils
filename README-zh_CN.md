@@ -105,7 +105,7 @@ npm install
 在extension.ts里引用功能函数并添加命令  
 [src/extension.ts](src/extension.ts)  
 
-在package.json里添加命令名称、菜单项、子菜单项，如果有配置可以在"configuration"字段下添加  
+在package.json里添加命令名称、菜单项、子菜单项，如果有配置可以在"configuration"字段下添加(如功能是否启用、有什么格式选择)  
 [package.json](package.json)  
 
 在nls(National Language Support)文件里添加相应的语言，当前支持英语、简体中文  
@@ -114,8 +114,9 @@ npm install
 
 开发完成后可以使用vscode进行调试  
 
-如果要发布新版本，一般需要修改4个文件：  
+如果要发布新版本，一般需要修改5个文件：  
 package.json 修改版本  
+package-lock.json 修改版本  
 CHANGELOG.md 记录上个版本到这个版本的改动  
 README.md 相关描述  
 README-zh_CN.md 相关描述  

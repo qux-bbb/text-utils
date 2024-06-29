@@ -104,7 +104,7 @@ Create a new .ts file under the src directory to write the functional code. For 
 Import functions and add commands in extension.ts  
 [src/extension.ts](src/extension.ts)  
 
-Add command names, menu items, submenu items in package.json. If there are configurations, they can be added under the "configuration"  
+Add command names, menu items, submenu items in package.json. If there are configurations, they can be added under the "configuration"(e.g. enable func, choose format)  
 [package.json](package.json)  
 
 Add corresponding languages in the nls (National Language Support) files. Currently, English and Simplified Chinese are supported  
@@ -113,8 +113,9 @@ Add corresponding languages in the nls (National Language Support) files. Curren
 
 After development is complete, you can use vscode for debugging  
 
-If you want to publish a new version, you generally need to modify the following 4 files:  
+If you want to publish a new version, you generally need to modify the following 5 files:  
 `package.json` update the version  
+`package-lock.json` update the version  
 `CHANGELOG.md` write changes from the previous version to this version  
 `README.md` relevant descriptions  
 `README-zh_CN.md` relevant descriptions in Simplified Chinese  
