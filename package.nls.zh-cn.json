@@ -41,6 +41,7 @@
     "config.case.enabled": "启用大小写转换功能",
     "config.list.enabled": "启用列表生成功能",
     "config.base64.enabled": "启用Base64编码解码功能",
+    "config.base64.decode_multiline_mode": "Base64解码多行的模式, 模式1是作为多个Base64字符串, 模式2是整体作为单个Base64字符串",
     "config.aes.enabled": "启用AES加密解密功能",
     "config.uri.enabled": "启用URI编码解码功能",
     "config.unicode.enabled": "启用Unicode编码解码功能",

@@ -388,6 +388,12 @@
                     "default": true,
                     "description": "%config.base64.enabled%"
                 },
+                "text-utils.base64.decode_multiline_mode": {
+                    "type": "integer",
+                    "enum": [1, 2],
+                    "default": 1,
+                    "description": "%config.base64.decode_multiline_mode%"
+                },
                 "text-utils.aes.enabled": {
                     "type": "boolean",
                     "default": true,
