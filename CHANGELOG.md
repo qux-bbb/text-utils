@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.1.1
+- add decode_multiline_mode for base64 decode
+
 ## 1.1.0
 - change "HEX" to "Hex"
 - add generateUUID func
