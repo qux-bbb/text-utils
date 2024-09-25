@@ -22,6 +22,7 @@
     "sortLinesByReverseAlpha.title": "按字母逆序",
     "sortLinesByNum.title": "按数字顺序",
     "sortLinesByReverseNum.title": "按数字逆序",
+    "reverseLines.title": "行逆序",
     "deduplicateByLine.title": "行去重",
     "deduplicateByChar.title": "字符去重",
     "randomPassword.title": "随机密码",

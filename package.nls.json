@@ -22,6 +22,7 @@
     "sortLinesByReverseAlpha.title": "By Reverse Alpha",
     "sortLinesByNum.title": "By Num",
     "sortLinesByReverseNum.title": "By Reverse Num",
+    "reverseLines.title": "Reverse Lines",
     "deduplicateByLine.title": "Deduplicate By Line",
     "deduplicateByChar.title": "Deduplicate By Char",
     "randomPassword.title": "Random Password",

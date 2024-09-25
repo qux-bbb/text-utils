@@ -64,3 +64,16 @@ export function sortLinesByReverseNum() {
 	let resultString = theLines.join(newlineSymbol);
 	setTheString(resultString, selectFlag);
 }
+
+
+export function reverseLines() {
+	let [theString, selectFlag] = getTheString();
+	if (!theString) { return; }
+	let newlineSymbol = getNewlineSymbol(theString);
+	let theLines = theString.split(newlineSymbol);
+
+	theLines.reverse();
+
+	let resultString = theLines.join(newlineSymbol);
+	setTheString(resultString, selectFlag);
+}

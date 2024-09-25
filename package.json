@@ -106,6 +106,10 @@
                 "title": "%sortLinesByReverseNum.title%"
             },
             {
+                "command": "text-utils.extension.reverseLines",
+                "title": "%reverseLines.title%"
+            },
+            {
                 "command": "text-utils.extension.deduplicateByLine",
                 "title": "%deduplicateByLine.title%"
             },
@@ -302,6 +306,10 @@
                 {
                     "command": "text-utils.extension.sortLinesByReverseNum",
                     "group": "text-utils@10@4"
+                },
+                {
+                    "command": "text-utils.extension.reverseLines",
+                    "group": "text-utils@10@5"
                 }
             ],
             "text-utils/deduplicate": [
