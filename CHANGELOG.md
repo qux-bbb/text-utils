@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.2.0
+- add reverseLines in sort lines func
+
 ## 1.1.1
 - add decode_multiline_mode for base64 decode
 
