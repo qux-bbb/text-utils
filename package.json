@@ -1,490 +1,491 @@
 {
-    "name": "text-utils",
-    "displayName": "%ext.displayName%",
-    "description": "%ext.description%",
-    "icon": "icon.png",
-    "version": "1.2.0",
-    "publisher": "qux-bbb",
-    "engines": {
-        "vscode": "^1.51.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/qux-bbb/text-utils"
-    },
-    "categories": [
-        "Other"
+  "name": "text-utils",
+  "displayName": "%ext.displayName%",
+  "description": "%ext.description%",
+  "icon": "icon.png",
+  "version": "1.2.0",
+  "publisher": "qux-bbb",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qux-bbb/text-utils"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "text-utils.extension.checkTaskList",
+        "title": "%checkTaskList.title%"
+      },
+      {
+        "command": "text-utils.extension.reverseString",
+        "title": "%reverseString.title%"
+      },
+      {
+        "command": "text-utils.extension.transformToLowercase",
+        "title": "%transformToLowercase.title%"
+      },
+      {
+        "command": "text-utils.extension.transformToUppercase",
+        "title": "%transformToUppercase.title%"
+      },
+      {
+        "command": "text-utils.extension.transformToTitleCase",
+        "title": "%transformToTitleCase.title%"
+      },
+      {
+        "command": "text-utils.extension.transformToUnorderedList",
+        "title": "%transformToUnorderedList.title%"
+      },
+      {
+        "command": "text-utils.extension.transformToOrderedList",
+        "title": "%transformToOrderedList.title%"
+      },
+      {
+        "command": "text-utils.extension.base64Encode",
+        "title": "%base64Encode.title%"
+      },
+      {
+        "command": "text-utils.extension.base64Decode",
+        "title": "%base64Decode.title%"
+      },
+      {
+        "command": "text-utils.extension.aesEncrypt",
+        "title": "%aesEncrypt.title%"
+      },
+      {
+        "command": "text-utils.extension.aesDecrypt",
+        "title": "%aesDecrypt.title%"
+      },
+      {
+        "command": "text-utils.extension.uriEncode",
+        "title": "%uriEncode.title%"
+      },
+      {
+        "command": "text-utils.extension.uriDecode",
+        "title": "%uriDecode.title%"
+      },
+      {
+        "command": "text-utils.extension.unicodeEncode",
+        "title": "%unicodeEncode.title%"
+      },
+      {
+        "command": "text-utils.extension.unicodeDecode",
+        "title": "%unicodeDecode.title%"
+      },
+      {
+        "command": "text-utils.extension.hexEncode",
+        "title": "%hexEncode.title%"
+      },
+      {
+        "command": "text-utils.extension.hexDecode",
+        "title": "%hexDecode.title%"
+      },
+      {
+        "command": "text-utils.extension.sortLinesByAlpha",
+        "title": "%sortLinesByAlpha.title%"
+      },
+      {
+        "command": "text-utils.extension.sortLinesByReverseAlpha",
+        "title": "%sortLinesByReverseAlpha.title%"
+      },
+      {
+        "command": "text-utils.extension.sortLinesByNum",
+        "title": "%sortLinesByNum.title%"
+      },
+      {
+        "command": "text-utils.extension.sortLinesByReverseNum",
+        "title": "%sortLinesByReverseNum.title%"
+      },
+      {
+        "command": "text-utils.extension.reverseLines",
+        "title": "%reverseLines.title%"
+      },
+      {
+        "command": "text-utils.extension.deduplicateByLine",
+        "title": "%deduplicateByLine.title%"
+      },
+      {
+        "command": "text-utils.extension.deduplicateByChar",
+        "title": "%deduplicateByChar.title%"
+      },
+      {
+        "command": "text-utils.extension.randomPassword",
+        "title": "%randomPassword.title%"
+      },
+      {
+        "command": "text-utils.extension.theDate",
+        "title": "%theDate.title%"
+      },
+      {
+        "command": "text-utils.extension.generateUUID",
+        "title": "%generateUUID.title%"
+      }
     ],
-    "activationEvents": [
-        "onStartupFinished"
-    ],
-    "main": "./out/extension.js",
-    "contributes": {
-        "commands": [
-            {
-                "command": "text-utils.extension.checkTaskList",
-                "title": "%checkTaskList.title%"
-            },
-            {
-                "command": "text-utils.extension.reverseString",
-                "title": "%reverseString.title%"
-            },
-            {
-                "command": "text-utils.extension.transformToLowercase",
-                "title": "%transformToLowercase.title%"
-            },
-            {
-                "command": "text-utils.extension.transformToUppercase",
-                "title": "%transformToUppercase.title%"
-            },
-            {
-                "command": "text-utils.extension.transformToTitleCase",
-                "title": "%transformToTitleCase.title%"
-            },
-            {
-                "command": "text-utils.extension.transformToUnorderedList",
-                "title": "%transformToUnorderedList.title%"
-            },
-            {
-                "command": "text-utils.extension.transformToOrderedList",
-                "title": "%transformToOrderedList.title%"
-            },
-            {
-                "command": "text-utils.extension.base64Encode",
-                "title": "%base64Encode.title%"
-            },
-            {
-                "command": "text-utils.extension.base64Decode",
-                "title": "%base64Decode.title%"
-            },
-            {
-                "command": "text-utils.extension.aesEncrypt",
-                "title": "%aesEncrypt.title%"
-            },
-            {
-                "command": "text-utils.extension.aesDecrypt",
-                "title": "%aesDecrypt.title%"
-            },
-            {
-                "command": "text-utils.extension.uriEncode",
-                "title": "%uriEncode.title%"
-            },
-            {
-                "command": "text-utils.extension.uriDecode",
-                "title": "%uriDecode.title%"
-            },
-            {
-                "command": "text-utils.extension.unicodeEncode",
-                "title": "%unicodeEncode.title%"
-            },
-            {
-                "command": "text-utils.extension.unicodeDecode",
-                "title": "%unicodeDecode.title%"
-            },
-            {
-                "command": "text-utils.extension.hexEncode",
-                "title": "%hexEncode.title%"
-            },
-            {
-                "command": "text-utils.extension.hexDecode",
-                "title": "%hexDecode.title%"
-            },
-            {
-                "command": "text-utils.extension.sortLinesByAlpha",
-                "title": "%sortLinesByAlpha.title%"
-            },
-            {
-                "command": "text-utils.extension.sortLinesByReverseAlpha",
-                "title": "%sortLinesByReverseAlpha.title%"
-            },
-            {
-                "command": "text-utils.extension.sortLinesByNum",
-                "title": "%sortLinesByNum.title%"
-            },
-            {
-                "command": "text-utils.extension.sortLinesByReverseNum",
-                "title": "%sortLinesByReverseNum.title%"
-            },
-            {
-                "command": "text-utils.extension.reverseLines",
-                "title": "%reverseLines.title%"
-            },
-            {
-                "command": "text-utils.extension.deduplicateByLine",
-                "title": "%deduplicateByLine.title%"
-            },
-            {
-                "command": "text-utils.extension.deduplicateByChar",
-                "title": "%deduplicateByChar.title%"
-            },
-            {
-                "command": "text-utils.extension.randomPassword",
-                "title": "%randomPassword.title%"
-            },
-            {
-                "command": "text-utils.extension.theDate",
-                "title": "%theDate.title%"
-            },
-            {
-                "command": "text-utils.extension.generateUUID",
-                "title": "%generateUUID.title%"
-            }
-        ],
-        "menus": {
-            "editor/context": [
-                {
-                    "command": "text-utils.extension.checkTaskList",
-                    "when": "editorTextFocus && config.text-utils.checkTaskList.enabled",
-                    "group": "text-utils@1"
-                },
-                {
-                    "command": "text-utils.extension.reverseString",
-                    "when": "editorHasSelection && config.text-utils.reverseString.enabled",
-                    "group": "text-utils@2"
-                },
-                {
-                    "submenu": "text-utils/case",
-                    "when": "config.text-utils.case.enabled",
-                    "group": "text-utils@3"
-                },
-                {
-                    "submenu": "text-utils/list",
-                    "when": "config.text-utils.list.enabled",
-                    "group": "text-utils@4"
-                },
-                {
-                    "submenu": "text-utils/base64",
-                    "when": "config.text-utils.base64.enabled",
-                    "group": "text-utils@5"
-                },
-                {
-                    "submenu": "text-utils/aes",
-                    "when": "config.text-utils.aes.enabled",
-                    "group": "text-utils@6"
-                },
-                {
-                    "submenu": "text-utils/uri",
-                    "when": "config.text-utils.uri.enabled",
-                    "group": "text-utils@7"
-                },
-                {
-                    "submenu": "text-utils/unicode",
-                    "when": "config.text-utils.unicode.enabled",
-                    "group": "text-utils@8"
-                },
-                {
-                    "submenu": "text-utils/hex",
-                    "when": "config.text-utils.hex.enabled",
-                    "group": "text-utils@9"
-                },
-                {
-                    "submenu": "text-utils/sort",
-                    "when": "config.text-utils.sort.enabled",
-                    "group": "text-utils@10"
-                },
-                {
-                    "submenu": "text-utils/deduplicate",
-                    "when": "config.text-utils.deduplicate.enabled",
-                    "group": "text-utils@11"
-                },
-                {
-                    "command": "text-utils.extension.randomPassword",
-                    "when": "config.text-utils.randomPassword.enabled",
-                    "group": "text-utils@12"
-                },
-                {
-                    "command": "text-utils.extension.theDate",
-                    "when": "config.text-utils.theDate.enabled",
-                    "group": "text-utils@13"
-                },
-                {
-                    "command": "text-utils.extension.generateUUID",
-                    "when": "config.text-utils.generateUUID.enabled",
-                    "group": "text-utils@14"
-                }
-            ],
-            "text-utils/case": [
-                {
-                    "command": "text-utils.extension.transformToLowercase",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@3@1"
-                },
-                {
-                    "command": "text-utils.extension.transformToUppercase",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@3@2"
-                },
-                {
-                    "command": "text-utils.extension.transformToTitleCase",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@3@3"
-                }
-            ],
-            "text-utils/list": [
-                {
-                    "command": "text-utils.extension.transformToUnorderedList",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@4@1"
-                },
-                {
-                    "command": "text-utils.extension.transformToOrderedList",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@4@2"
-                }
-            ],
-            "text-utils/base64": [
-                {
-                    "command": "text-utils.extension.base64Encode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@5@1"
-                },
-                {
-                    "command": "text-utils.extension.base64Decode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@5@2"
-                }
-            ],
-            "text-utils/aes": [
-                {
-                    "command": "text-utils.extension.aesEncrypt",
-                    "group": "text-utils@6@1"
-                },
-                {
-                    "command": "text-utils.extension.aesDecrypt",
-                    "group": "text-utils@6@2"
-                }
-            ],
-            "text-utils/uri": [
-                {
-                    "command": "text-utils.extension.uriEncode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@7@1"
-                },
-                {
-                    "command": "text-utils.extension.uriDecode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@7@2"
-                }
-            ],
-            "text-utils/unicode": [
-                {
-                    "command": "text-utils.extension.unicodeEncode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@8@1"
-                },
-                {
-                    "command": "text-utils.extension.unicodeDecode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@8@2"
-                }
-            ],
-            "text-utils/hex": [
-                {
-                    "command": "text-utils.extension.hexEncode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@9@1"
-                },
-                {
-                    "command": "text-utils.extension.hexDecode",
-                    "when": "editorHasSelection",
-                    "group": "text-utils@9@2"
-                }
-            ],
-            "text-utils/sort": [
-                {
-                    "command": "text-utils.extension.sortLinesByAlpha",
-                    "group": "text-utils@10@1"
-                },
-                {
-                    "command": "text-utils.extension.sortLinesByReverseAlpha",
-                    "group": "text-utils@10@2"
-                },
-                {
-                    "command": "text-utils.extension.sortLinesByNum",
-                    "group": "text-utils@10@3"
-                },
-                {
-                    "command": "text-utils.extension.sortLinesByReverseNum",
-                    "group": "text-utils@10@4"
-                },
-                {
-                    "command": "text-utils.extension.reverseLines",
-                    "group": "text-utils@10@5"
-                }
-            ],
-            "text-utils/deduplicate": [
-                {
-                    "command": "text-utils.extension.deduplicateByLine",
-                    "group": "text-utils@11@1"
-                },
-                {
-                    "command": "text-utils.extension.deduplicateByChar",
-                    "group": "text-utils@11@2"
-                }
-            ]
+    "menus": {
+      "editor/context": [
+        {
+          "command": "text-utils.extension.checkTaskList",
+          "when": "editorTextFocus && config.text-utils.checkTaskList.enabled",
+          "group": "text-utils@1"
         },
-        "submenus": [
-            {
-                "id": "text-utils/case",
-                "label": "%case.label%"
-            },
-            {
-                "id": "text-utils/list",
-                "label": "%list.label%"
-            },
-            {
-                "id": "text-utils/base64",
-                "label": "%base64.label%"
-            },
-            {
-                "id": "text-utils/aes",
-                "label": "%aes.label%"
-            },
-            {
-                "id": "text-utils/uri",
-                "label": "%uri.label%"
-            },
-            {
-                "id": "text-utils/unicode",
-                "label": "%unicode.label%"
-            },
-            {
-                "id": "text-utils/hex",
-                "label": "%hex.label%"
-            },
-            {
-                "id": "text-utils/sort",
-                "label": "%sort.label%"
-            },
-            {
-                "id": "text-utils/deduplicate",
-                "label": "%deduplicate.label%"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "text-utils.extension.checkTaskList",
-                "key": "alt+x",
-                "when": "editorTextFocus"
-            }
-        ],
-        "configuration": {
-            "title": "Text Utils",
-            "properties": {
-                "text-utils.checkTaskList.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.checkTaskList.enabled%"
-                },
-                "text-utils.reverseString.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.reverseString.enabled%"
-                },
-                "text-utils.case.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.case.enabled%"
-                },
-                "text-utils.list.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.list.enabled%"
-                },
-                "text-utils.base64.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.base64.enabled%"
-                },
-                "text-utils.base64.decode_multiline_mode": {
-                    "type": "integer",
-                    "enum": [1, 2],
-                    "default": 1,
-                    "description": "%config.base64.decode_multiline_mode%"
-                },
-                "text-utils.aes.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.aes.enabled%"
-                },
-                "text-utils.uri.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.uri.enabled%"
-                },
-                "text-utils.unicode.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.unicode.enabled%"
-                },
-                "text-utils.hex.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.hex.enabled%"
-                },
-                "text-utils.sort.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.sort.enabled%"
-                },
-                "text-utils.deduplicate.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.deduplicate.enabled%"
-                },
-                "text-utils.randomPassword.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.randomPassword.enabled%"
-                },
-                "text-utils.theDate.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.theDate.enabled%"
-                },
-                "text-utils.theDate.format": {
-                    "type": "string",
-                    "enum": [
-                        "yyyy/m/d:1970/1/2",
-                        "yyyy-m-d:1970-1-2",
-                        "yyyy/mm/dd:1970/01/02",
-                        "yyyy-mm-dd:1970-01-02",
-                        "yyyymmdd:19700102"
-                    ],
-                    "default": "yyyy/m/d:1970/1/2",
-                    "description": "%config.theDate.format%"
-                },
-                "text-utils.generateUUID.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "%config.generateUUID.enabled%"
-                }
-            }
+        {
+          "command": "text-utils.extension.reverseString",
+          "when": "editorHasSelection && config.text-utils.reverseString.enabled",
+          "group": "text-utils@2"
+        },
+        {
+          "submenu": "text-utils/case",
+          "when": "config.text-utils.case.enabled",
+          "group": "text-utils@3"
+        },
+        {
+          "submenu": "text-utils/list",
+          "when": "config.text-utils.list.enabled",
+          "group": "text-utils@4"
+        },
+        {
+          "submenu": "text-utils/base64",
+          "when": "config.text-utils.base64.enabled",
+          "group": "text-utils@5"
+        },
+        {
+          "submenu": "text-utils/aes",
+          "when": "config.text-utils.aes.enabled",
+          "group": "text-utils@6"
+        },
+        {
+          "submenu": "text-utils/uri",
+          "when": "config.text-utils.uri.enabled",
+          "group": "text-utils@7"
+        },
+        {
+          "submenu": "text-utils/unicode",
+          "when": "config.text-utils.unicode.enabled",
+          "group": "text-utils@8"
+        },
+        {
+          "submenu": "text-utils/hex",
+          "when": "config.text-utils.hex.enabled",
+          "group": "text-utils@9"
+        },
+        {
+          "submenu": "text-utils/sort",
+          "when": "config.text-utils.sort.enabled",
+          "group": "text-utils@10"
+        },
+        {
+          "submenu": "text-utils/deduplicate",
+          "when": "config.text-utils.deduplicate.enabled",
+          "group": "text-utils@11"
+        },
+        {
+          "command": "text-utils.extension.randomPassword",
+          "when": "config.text-utils.randomPassword.enabled",
+          "group": "text-utils@12"
+        },
+        {
+          "command": "text-utils.extension.theDate",
+          "when": "config.text-utils.theDate.enabled",
+          "group": "text-utils@13"
+        },
+        {
+          "command": "text-utils.extension.generateUUID",
+          "when": "config.text-utils.generateUUID.enabled",
+          "group": "text-utils@14"
         }
+      ],
+      "text-utils/case": [
+        {
+          "command": "text-utils.extension.transformToLowercase",
+          "when": "editorHasSelection",
+          "group": "text-utils@3@1"
+        },
+        {
+          "command": "text-utils.extension.transformToUppercase",
+          "when": "editorHasSelection",
+          "group": "text-utils@3@2"
+        },
+        {
+          "command": "text-utils.extension.transformToTitleCase",
+          "when": "editorHasSelection",
+          "group": "text-utils@3@3"
+        }
+      ],
+      "text-utils/list": [
+        {
+          "command": "text-utils.extension.transformToUnorderedList",
+          "when": "editorHasSelection",
+          "group": "text-utils@4@1"
+        },
+        {
+          "command": "text-utils.extension.transformToOrderedList",
+          "when": "editorHasSelection",
+          "group": "text-utils@4@2"
+        }
+      ],
+      "text-utils/base64": [
+        {
+          "command": "text-utils.extension.base64Encode",
+          "when": "editorHasSelection",
+          "group": "text-utils@5@1"
+        },
+        {
+          "command": "text-utils.extension.base64Decode",
+          "when": "editorHasSelection",
+          "group": "text-utils@5@2"
+        }
+      ],
+      "text-utils/aes": [
+        {
+          "command": "text-utils.extension.aesEncrypt",
+          "group": "text-utils@6@1"
+        },
+        {
+          "command": "text-utils.extension.aesDecrypt",
+          "group": "text-utils@6@2"
+        }
+      ],
+      "text-utils/uri": [
+        {
+          "command": "text-utils.extension.uriEncode",
+          "when": "editorHasSelection",
+          "group": "text-utils@7@1"
+        },
+        {
+          "command": "text-utils.extension.uriDecode",
+          "when": "editorHasSelection",
+          "group": "text-utils@7@2"
+        }
+      ],
+      "text-utils/unicode": [
+        {
+          "command": "text-utils.extension.unicodeEncode",
+          "when": "editorHasSelection",
+          "group": "text-utils@8@1"
+        },
+        {
+          "command": "text-utils.extension.unicodeDecode",
+          "when": "editorHasSelection",
+          "group": "text-utils@8@2"
+        }
+      ],
+      "text-utils/hex": [
+        {
+          "command": "text-utils.extension.hexEncode",
+          "when": "editorHasSelection",
+          "group": "text-utils@9@1"
+        },
+        {
+          "command": "text-utils.extension.hexDecode",
+          "when": "editorHasSelection",
+          "group": "text-utils@9@2"
+        }
+      ],
+      "text-utils/sort": [
+        {
+          "command": "text-utils.extension.sortLinesByAlpha",
+          "group": "text-utils@10@1"
+        },
+        {
+          "command": "text-utils.extension.sortLinesByReverseAlpha",
+          "group": "text-utils@10@2"
+        },
+        {
+          "command": "text-utils.extension.sortLinesByNum",
+          "group": "text-utils@10@3"
+        },
+        {
+          "command": "text-utils.extension.sortLinesByReverseNum",
+          "group": "text-utils@10@4"
+        },
+        {
+          "command": "text-utils.extension.reverseLines",
+          "group": "text-utils@10@5"
+        }
+      ],
+      "text-utils/deduplicate": [
+        {
+          "command": "text-utils.extension.deduplicateByLine",
+          "group": "text-utils@11@1"
+        },
+        {
+          "command": "text-utils.extension.deduplicateByChar",
+          "group": "text-utils@11@2"
+        }
+      ]
     },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "pretest": "npm run compile && npm run lint",
-        "lint": "eslint src --ext ts",
-        "test": "node ./out/test/runTest.js"
-    },
-    "devDependencies": {
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^8.0.0",
-        "@types/node": "^12.11.7",
-        "@types/uuid": "^10.0.0",
-        "@types/vscode": "^1.51.0",
-        "@typescript-eslint/eslint-plugin": "^4.1.1",
-        "@typescript-eslint/parser": "^4.1.1",
-        "eslint": "^7.9.0",
-        "glob": "^7.1.6",
-        "mocha": "^10.1.0",
-        "typescript": "^4.0.2",
-        "vscode-test": "^1.4.0"
-    },
-    "dependencies": {
-        "uuid": "^10.0.0"
+    "submenus": [
+      {
+        "id": "text-utils/case",
+        "label": "%case.label%"
+      },
+      {
+        "id": "text-utils/list",
+        "label": "%list.label%"
+      },
+      {
+        "id": "text-utils/base64",
+        "label": "%base64.label%"
+      },
+      {
+        "id": "text-utils/aes",
+        "label": "%aes.label%"
+      },
+      {
+        "id": "text-utils/uri",
+        "label": "%uri.label%"
+      },
+      {
+        "id": "text-utils/unicode",
+        "label": "%unicode.label%"
+      },
+      {
+        "id": "text-utils/hex",
+        "label": "%hex.label%"
+      },
+      {
+        "id": "text-utils/sort",
+        "label": "%sort.label%"
+      },
+      {
+        "id": "text-utils/deduplicate",
+        "label": "%deduplicate.label%"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "text-utils.extension.checkTaskList",
+        "key": "alt+x",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Text Utils",
+      "properties": {
+        "text-utils.checkTaskList.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.checkTaskList.enabled%"
+        },
+        "text-utils.reverseString.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.reverseString.enabled%"
+        },
+        "text-utils.case.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.case.enabled%"
+        },
+        "text-utils.list.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.list.enabled%"
+        },
+        "text-utils.base64.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.base64.enabled%"
+        },
+        "text-utils.base64.decode_multiline_mode": {
+          "type": "integer",
+          "enum": [
+            1,
+            2
+          ],
+          "default": 1,
+          "description": "%config.base64.decode_multiline_mode%"
+        },
+        "text-utils.aes.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.aes.enabled%"
+        },
+        "text-utils.uri.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.uri.enabled%"
+        },
+        "text-utils.unicode.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.unicode.enabled%"
+        },
+        "text-utils.hex.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.hex.enabled%"
+        },
+        "text-utils.sort.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.sort.enabled%"
+        },
+        "text-utils.deduplicate.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.deduplicate.enabled%"
+        },
+        "text-utils.randomPassword.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.randomPassword.enabled%"
+        },
+        "text-utils.theDate.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.theDate.enabled%"
+        },
+        "text-utils.theDate.format": {
+          "type": "string",
+          "enum": [
+            "yyyy/m/d:1970/1/2",
+            "yyyy-m-d:1970-1-2",
+            "yyyy/mm/dd:1970/01/02",
+            "yyyy-mm-dd:1970-01-02",
+            "yyyymmdd:19700102"
+          ],
+          "default": "yyyy/m/d:1970/1/2",
+          "description": "%config.theDate.format%"
+        },
+        "text-utils.generateUUID.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.generateUUID.enabled%"
+        }
+      }
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.86.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "uuid": "^10.0.0"
+  }
 }

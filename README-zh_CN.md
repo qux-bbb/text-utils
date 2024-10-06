@@ -88,7 +88,7 @@ hello world -> h3llo*world
    git clone https://github.com/qux-bbb/text-utils
    cd text-utils
    npm install
-   npm install -g vsce
+   npm install -g @vscode/vsce
    vsce package
    ```
    这样可以生成vsix包，在扩展窗口的右上角菜单选择"从 VSIX 安装"，选择生成的vsix包安装即可  
@@ -129,7 +129,7 @@ README-zh_CN.md 相关描述
 ```r
 cd text-utils
 npm install
-npm install -g vsce
+npm install -g @vscode/vsce
 vsce package
 ```
 

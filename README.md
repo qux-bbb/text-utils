@@ -87,7 +87,7 @@ hello world -> h3llo*world
    git clone https://github.com/qux-bbb/text-utils
    cd text-utils
    npm install
-   npm install -g vsce
+   npm install -g @vscode/vsce
    vsce package
    ```
    the vsix package will be generated. In the upper right corner of the vscode extension window, select "install from VSIX", find the generated vsix package and install.  
@@ -128,7 +128,7 @@ Build the vsix package
 ```r
 cd text-utils
 npm install
-npm install -g vsce
+npm install -g @vscode/vsce
 vsce package
 ```
 
